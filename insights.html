@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Insights & Research | Wealth Bridge — Financial Education & Fiduciary Perspectives</title>
+  <meta name="description" content="Explore research-backed financial education, long-term wealth planning insights, asset allocation principles, and investor guidance from Wealth Bridge.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Bootstrap 5 CSS & Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Custom Design System -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       MANDATORY NAVIGATION BAR
+       ========================================================================= -->
+  <header class="wb-navbar">
+    <div class="container-fluid px-lg-5">
+      <div class="d-flex align-items-center justify-content-between">
+        
+        <a class="navbar-brand" href="index.html" aria-label="Wealth Bridge Home">
+          <img src="assets/images/logo.svg" alt="Wealth Bridge Logo" class="brand-logo-img" width="220" height="44">
+        </a>
+
+        <nav class="d-none d-xl-flex align-items-center navbar-nav flex-row">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="about.html">About</a>
+          <a class="nav-link" href="advisory-services.html">Advisory Services</a>
+          <a class="nav-link" href="investment-approach.html">Our Approach</a>
+          <a class="nav-link active" href="insights.html">Insights</a>
+          <a class="nav-link" href="risk-disclosures.html">Risk Disclosures</a>
+          <a class="nav-link" href="contact.html">Contact</a>
+        </nav>
+
+        <div class="d-flex align-items-center gap-2 gap-md-3">
+          
+          <div class="d-none d-lg-flex align-items-center gap-1 border-end pe-2 me-1 border-secondary-subtle">
+            <a href="login.html" class="nav-auth-link">Login</a>
+            <span class="text-muted" style="font-size: 0.8rem;">|</span>
+            <a href="signup.html" class="nav-auth-link">Sign Up</a>
+          </div>
+
+          <button type="button" class="theme-toggle-btn" aria-label="Toggle theme mode" title="Toggle theme">
+            <i class="bi bi-moon-stars-fill"></i>
+          </button>
+
+          <a href="contact.html" class="btn btn-gold d-none d-sm-inline-flex">
+            <span>Schedule a Consultation</span>
+            <i class="bi bi-arrow-right"></i>
+          </a>
+
+          <button class="navbar-toggler d-xl-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNavOffcanvas" aria-controls="mobileNavOffcanvas" aria-label="Open navigation menu">
+            <i class="bi bi-list fs-3"></i>
+          </button>
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Offcanvas Drawer -->
+  <div class="offcanvas offcanvas-end wb-offcanvas" tabindex="-1" id="mobileNavOffcanvas" aria-labelledby="mobileNavLabel">
+    <div class="offcanvas-header">
+      <a href="index.html" class="d-flex align-items-center">
+        <img src="assets/images/logo.svg" alt="Wealth Bridge Logo" class="brand-logo-img" style="height: 34px;">
+      </a>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close menu"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column justify-content-between p-4">
+      <nav class="nav flex-column mb-4">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="advisory-services.html">Advisory Services</a>
+        <a class="nav-link" href="investment-approach.html">Our Approach</a>
+        <a class="nav-link active" href="insights.html">Insights</a>
+        <a class="nav-link" href="risk-disclosures.html">Risk Disclosures</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </nav>
+
+      <div class="pt-3 border-top">
+        <div class="d-flex gap-2 mb-3">
+          <a href="login.html" class="btn btn-outline-gold flex-fill text-center">Login</a>
+          <a href="signup.html" class="btn btn-gold flex-fill text-center">Sign Up</a>
+        </div>
+        <a href="contact.html" class="btn btn-navy w-100 mb-3">
+          <i class="bi bi-calendar-event me-2"></i>Schedule a Consultation
+        </a>
+        <p class="text-muted small text-center mb-0">Build Wealth With Clarity. Invest With Confidence.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       MAIN CONTENT WRAPPER
+       ========================================================================= -->
+  <main class="main-wrapper">
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="page-hero-inner">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Insights & Resources</li>
+            </ol>
+          </nav>
+          <span class="eyebrow">RESEARCH & COMMENTARY</span>
+          <h1>Empowering Investors Through Empirical Clarity.</h1>
+          <p class="lead">
+            Educational perspectives on macroeconomic dynamics, long-horizon wealth architecture, tax-aware compounding, and disciplined risk management.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE SEARCH & CATEGORY FILTER BAR -->
+    <section class="py-4 bg-surface border-bottom">
+      <div class="container">
+        <div class="row align-items-center g-3">
+          
+          <!-- Category Filter Pills -->
+          <div class="col-lg-8">
+            <div class="filter-btn-group mb-0">
+              <button type="button" class="filter-btn active" data-filter="all">All Topics</button>
+              <button type="button" class="filter-btn" data-filter="investment-strategy">Investment Strategy</button>
+              <button type="button" class="filter-btn" data-filter="wealth-planning">Wealth Planning</button>
+              <button type="button" class="filter-btn" data-filter="risk-management">Risk Management</button>
+              <button type="button" class="filter-btn" data-filter="market-fundamentals">Market Fundamentals</button>
+              <button type="button" class="filter-btn" data-filter="succession">Succession & Estate</button>
+            </div>
+          </div>
+
+          <!-- Real-Time Search Bar -->
+          <div class="col-lg-4 d-flex justify-content-lg-end">
+            <div class="search-wrapper w-100">
+              <i class="bi bi-search search-icon"></i>
+              <input type="text" id="insightSearchInput" class="search-input" placeholder="Search insights and topics..." aria-label="Search articles">
+            </div>
+          </div>
+
+        </div>
+
+        <div class="d-flex justify-content-between align-items-center mt-3 pt-2 border-top small text-muted">
+          <div>
+            Showing <strong id="visibleArticleCount" class="text-heading">6</strong> research articles
+          </div>
+          <div class="fst-italic">
+            Objective educational material • No market timing or product recommendations
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDITORIAL ARTICLES GRID -->
+    <section class="section-padding section-alt">
+      <div class="container">
+
+        <!-- No Results Alert -->
+        <div id="noResultsAlert" class="alert p-5 text-center bg-surface border border-gold d-none">
+          <i class="bi bi-journal-x text-gold display-4 mb-3 d-block"></i>
+          <h4 class="h5 text-heading mb-2">No Research Articles Match Your Filter</h4>
+          <p class="text-muted small mb-3">Try adjusting your keywords or clearing the active category filter.</p>
+          <button type="button" id="resetFilterBtn" class="btn btn-outline-gold btn-sm">
+            <i class="bi bi-arrow-counterclockwise me-1"></i>Reset All Filters
+          </button>
+        </div>
+
+        <div class="row g-4" id="articlesContainer">
+
+          <!-- Article 1 -->
+          <div class="col-md-6 col-lg-4 insight-card-item" data-category="investment-strategy">
+            <article class="insight-card">
+              <div class="insight-img-wrap">
+                <img src="assets/images/insight_1.jpg" alt="Asset Allocation Across Shifting Economic Cycles" loading="lazy">
+                <span class="insight-category-badge">Investment Strategy</span>
+              </div>
+              <div class="insight-content">
+                <div class="insight-meta">
+                  <span><i class="bi bi-clock me-1"></i>7 Min Read</span>
+                  <span>•</span>
+                  <span>By Jonathan Vance, CFA</span>
+                </div>
+                <h3>Asset Allocation Across Shifting Economic Cycles</h3>
+                <p>
+                  Why static equity-bond models encounter challenges during inflationary and rate-tightening regimes, and how structural diversification preserves real purchasing power.
+                </p>
+                <button type="button" class="editorial-link mt-auto bg-transparent border-0 p-0 text-start" data-bs-toggle="modal" data-bs-target="#articleModal1">
+                  <span>Read Article Summary</span>
+                  <i class="bi bi-arrow-right"></i>
+                </button>
+              </div>
+            </article>
+          </div>
+
+          <!-- Article 2 -->
+          <div class="col-md-6 col-lg-4 insight-card-item" data-category="wealth-planning market-fundamentals">
+            <article class="insight-card">
+              <div class="insight-img-wrap">
+                <img src="assets/images/insight_2.jpg" alt="The Behavioral Psychology of Long-Term Investing Discipline" loading="lazy">
+                <span class="insight-category-badge">Wealth Planning</span>
+              </div>
+              <div class="insight-content">
+                <div class="insight-meta">
+                  <span><i class="bi bi-clock me-1"></i>5 Min Read</span>
+                  <span>•</span>
+                  <span>By Eleanor Chen, CFP®</span>
+                </div>
+                <h3>The Psychology of Long-Term Investing Discipline</h3>
+                <p>
+                  Exploring loss aversion and recency bias: why retail investors routinely sell at cyclical bottoms and how an Investment Policy Statement serves as an emotional firewall.
+                </p>
+                <button type="button" class="editorial-link mt-auto bg-transparent border-0 p-0 text-start" data-bs-toggle="modal" data-bs-target="#articleModal2">
+                  <span>Read Article Summary</span>
+                  <i class="bi bi-arrow-right"></i>
+                </button>
+              </div>
+            </article>
+          </div>
+
+          <!-- Article 3 -->
+          <div class="col-md-6 col-lg-4 insight-card-item" data-category="risk-management investment-strategy">
+            <article class="insight-card">
+              <div class="insight-img-wrap">
+                <img src="assets/images/insight_3.jpg" alt="Tax-Aware Portfolio Rebalancing: Preserving Net Returns" loading="lazy">
+                <span class="insight-category-badge">Risk Management</span>
+              </div>
+              <div class="insight-content">
+                <div class="insight-meta">
+                  <span><i class="bi bi-clock me-1"></i>8 Min Read</span>
+                  <span>•</span>
+                  <span>By Marcus Holloway, ChFC®</span>
+                </div>
+                <h3>Tax-Aware Portfolio Rebalancing: Preserving Net Returns</h3>
+                <p>
+                  A quantitative examination of asset location thresholds, selective tax-loss harvesting, and opportunistic rebalancing to maximize net after-tax compound growth.
+                </p>
+                <button type="button" class="editorial-link mt-auto bg-transparent border-0 p-0 text-start" data-bs-toggle="modal" data-bs-target="#articleModal3">
+                  <span>Read Article Summary</span>
+                  <i class="bi bi-arrow-right"></i>
+                </button>
+              </div>
+            </article>
+          </div>
+
+          <!-- Article 4 -->
+          <div class="col-md-6 col-lg-4 insight-card-item" data-category="market-fundamentals investment-strategy">
+            <article class="insight-card">
+              <div class="insight-img-wrap">
+                <img src="assets/images/insight_4.jpg" alt="Navigating Interest Rate Regimes and Fixed Income Strategy" loading="lazy">
+                <span class="insight-category-badge">Market Fundamentals</span>
+              </div>
+              <div class="insight-content">
+                <div class="insight-meta">
+                  <span><i class="bi bi-clock me-1"></i>6 Min Read</span>
+                  <span>•</span>
+                  <span>By Dr. Sophia Al-Mansoor, Ph.D.</span>
+                </div>
+                <h3>Navigating Interest Rate Regimes & Fixed Income</h3>
+                <p>
+                  Analyzing yield curves, duration risk, and credit spreads. How modern investors structure bond ladders to hedge equity drawdowns without taking excessive duration bets.
+                </p>
+                <button type="button" class="editorial-link mt-auto bg-transparent border-0 p-0 text-start" data-bs-toggle="modal" data-bs-target="#articleModal4">
+                  <span>Read Article Summary</span>
+                  <i class="bi bi-arrow-right"></i>
+                </button>
+              </div>
+            </article>
+          </div>
+
+          <!-- Article 5 -->
+          <div class="col-md-6 col-lg-4 insight-card-item" data-category="wealth-planning succession">
+            <article class="insight-card">
+              <div class="insight-img-wrap">
+                <img src="assets/images/insight_5.jpg" alt="Architecting Multi-Generational Wealth Succession" loading="lazy">
+                <span class="insight-category-badge">Succession & Estate</span>
+              </div>
+              <div class="insight-content">
+                <div class="insight-meta">
+                  <span><i class="bi bi-clock me-1"></i>9 Min Read</span>
+                  <span>•</span>
+                  <span>By Eleanor Chen, CFP®</span>
+                </div>
+                <h3>Architecting Multi-Generational Wealth Succession</h3>
+                <p>
+                  Over 70% of intergenerational wealth transfers encounter friction due to a breakdown in communication. Frameworks for establishing family governance and financial literacy.
+                </p>
+                <button type="button" class="editorial-link mt-auto bg-transparent border-0 p-0 text-start" data-bs-toggle="modal" data-bs-target="#articleModal5">
+                  <span>Read Article Summary</span>
+                  <i class="bi bi-arrow-right"></i>
+                </button>
+              </div>
+            </article>
+          </div>
+
+          <!-- Article 6 -->
+          <div class="col-md-6 col-lg-4 insight-card-item" data-category="risk-management market-fundamentals">
+            <article class="insight-card">
+              <div class="insight-img-wrap">
+                <img src="assets/images/insight_6.jpg" alt="Evaluating Downside Volatility: A Fiduciary Perspective" loading="lazy">
+                <span class="insight-category-badge">Risk Management</span>
+              </div>
+              <div class="insight-content">
+                <div class="insight-meta">
+                  <span><i class="bi bi-clock me-1"></i>6 Min Read</span>
+                  <span>•</span>
+                  <span>By Jonathan Vance, CFA</span>
+                </div>
+                <h3>Evaluating Downside Volatility: A Fiduciary Perspective</h3>
+                <p>
+                  Why volatility is the admission fee for market returns, but permanent loss of capital is catastrophic. How defensive cash buffers prevent forced liquidations.
+                </p>
+                <button type="button" class="editorial-link mt-auto bg-transparent border-0 p-0 text-start" data-bs-toggle="modal" data-bs-target="#articleModal6">
+                  <span>Read Article Summary</span>
+                  <i class="bi bi-arrow-right"></i>
+                </button>
+              </div>
+            </article>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FREQUENTLY ASKED INVESTOR QUESTIONS (FAQ SECTION) -->
+    <section class="section-padding section-surface">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="eyebrow eyebrow-center">TRANSPARENCY IN PRACTICE</span>
+          <h2>Frequently Asked Investor Questions</h2>
+          <div class="gold-divider center"></div>
+          <p class="text-muted">
+            Direct, transparent answers regarding our fiduciary standards, fee models, advisory scope, and portfolio oversight.
+          </p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <div class="accordion" id="investorFaqAccordion">
+              
+              <!-- FAQ 1 -->
+              <div class="accordion-item mb-3 border rounded shadow-sm">
+                <h3 class="accordion-header" id="faqHeading1">
+                  <button class="accordion-button collapsed fw-semibold text-heading" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="false" aria-controls="faqCollapse1">
+                    What distinguishes a fiduciary investment advisor from a traditional broker?
+                  </button>
+                </h3>
+                <div id="faqCollapse1" class="accordion-collapse collapse" aria-labelledby="faqHeading1" data-bs-parent="#investorFaqAccordion">
+                  <div class="accordion-body text-body small">
+                    A fiduciary advisor is legally and ethically bound to act solely in the best interests of the client at all times. Traditional brokers, in contrast, frequently operate under a lower "suitability standard," permitting them to recommend products that generate higher commissions or sales incentives for their firm, provided the product is considered nominally suitable. Wealth Bridge operates exclusively under a fiduciary mandate with zero proprietary product quotas.
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ 2 -->
+              <div class="accordion-item mb-3 border rounded shadow-sm">
+                <h3 class="accordion-header" id="faqHeading2">
+                  <button class="accordion-button collapsed fw-semibold text-heading" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+                    How does Wealth Bridge structure advisory fees?
+                  </button>
+                </h3>
+                <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2" data-bs-parent="#investorFaqAccordion">
+                  <div class="accordion-body text-body small">
+                    We adhere to transparent, tiered fee structures based on assets under advisory (AUA) or flat retainer fees for complex wealth planning mandates. We do not charge transaction commissions, performance carry fees that encourage reckless risk-taking, or accept soft-dollar kickbacks from third-party fund managers. All fees are clearly disclosed in advance in your advisory agreement.
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ 3 -->
+              <div class="accordion-item mb-3 border rounded shadow-sm">
+                <h3 class="accordion-header" id="faqHeading3">
+                  <button class="accordion-button collapsed fw-semibold text-heading" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+                    Are investment returns guaranteed?
+                  </button>
+                </h3>
+                <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3" data-bs-parent="#investorFaqAccordion">
+                  <div class="accordion-body text-body small">
+                    <strong>No.</strong> Reputable, fiduciary investment advisors never guarantee returns. Capital markets fluctuate, and past performance is never an assurance of future results. Our role is to optimize factors within your control—asset allocation, cost reduction, tax location, and disciplined risk mitigation—to maximize the probability of achieving your life goals while prudently managing downside volatility.
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ 4 -->
+              <div class="accordion-item mb-3 border rounded shadow-sm">
+                <h3 class="accordion-header" id="faqHeading4">
+                  <button class="accordion-button collapsed fw-semibold text-heading" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse4" aria-expanded="false" aria-controls="faqCollapse4">
+                    Who holds custody of my investment assets?
+                  </button>
+                </h3>
+                <div id="faqCollapse4" class="accordion-collapse collapse" aria-labelledby="faqHeading4" data-bs-parent="#investorFaqAccordion">
+                  <div class="accordion-body text-body small">
+                    Wealth Bridge never takes direct physical custody of client funds or securities. All client assets are held in independent, SIPC-insured institutional custodians (such as Charles Schwab, Fidelity Institutional, or Pershing) registered in the client's own name. Clients retain sole title and complete online access to their independent custodian accounts at all times.
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ 5 -->
+              <div class="accordion-item mb-3 border rounded shadow-sm">
+                <h3 class="accordion-header" id="faqHeading5">
+                  <button class="accordion-button collapsed fw-semibold text-heading" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse5" aria-expanded="false" aria-controls="faqCollapse5">
+                    How frequently are portfolios reviewed and rebalanced?
+                  </button>
+                </h3>
+                <div id="faqCollapse5" class="accordion-collapse collapse" aria-labelledby="faqHeading5" data-bs-parent="#investorFaqAccordion">
+                  <div class="accordion-body text-body small">
+                    Portfolios are subjected to continuous algorithmic drift monitoring and formal quarterly committee reviews. Rather than rebalancing on arbitrary calendar dates (which can generate unnecessary transaction costs and taxable events), we employ systematic "threshold rebalancing"—realigning assets only when an asset class crosses designated percentage bands relative to its strategic target.
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ARTICLE SUMMARY MODALS -->
+    <!-- Modal 1 -->
+    <div class="modal fade" id="articleModal1" tabindex="-1" aria-labelledby="modal1Title" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div>
+              <span class="badge-editorial mb-1">Investment Strategy</span>
+              <h4 class="modal-title h5" id="modal1Title">Asset Allocation Across Shifting Economic Cycles</h4>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="text-muted small"><strong>Author:</strong> Jonathan Vance, CFA | <strong>Reading Time:</strong> 7 Minutes</p>
+            <p>Traditional 60/40 balanced portfolios rely heavily on a negative correlation between equities and government bonds. However, during periods characterized by supply-side inflation and tightening monetary regimes, equities and nominal bonds frequently decline in tandem.</p>
+            <p>Our research demonstrates that incorporating real assets, inflation-protected sovereign debt (TIPS), and global non-dollar equity exposure creates an all-weather foundation that preserves purchasing power across shifting macroeconomic regimes.</p>
+            <div class="p-3 bg-alt rounded border border-gold small">
+              <strong>Key Takeaway:</strong> Fiduciary asset allocation must account for multi-decade inflation regimes rather than assuming low-volatility conditions will persist indefinitely.
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-gold" data-bs-dismiss="modal">Close</button>
+            <a href="contact.html" class="btn btn-gold">Discuss With an Advisor</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="articleModal2" tabindex="-1" aria-labelledby="modal2Title" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div>
+              <span class="badge-editorial mb-1">Wealth Planning</span>
+              <h4 class="modal-title h5" id="modal2Title">The Psychology of Long-Term Investing Discipline</h4>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="text-muted small"><strong>Author:</strong> Eleanor Chen, CFP® | <strong>Reading Time:</strong> 5 Minutes</p>
+            <p>Empirical behavioral finance studies show that the average equity investor underperforms broad market indexes by 200–300 basis points annually due to emotional trading—selling during steep corrections and buying during speculative bull runs.</p>
+            <p>We examine the role of a formal Investment Policy Statement (IPS) in setting rules-based drawdown guardrails and maintaining behavioral fortitude when headlines induce anxiety.</p>
+            <div class="p-3 bg-alt rounded border border-gold small">
+              <strong>Key Takeaway:</strong> Successful investing is often more a test of temperament and psychological discipline than raw intellectual calculation.
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-gold" data-bs-dismiss="modal">Close</button>
+            <a href="contact.html" class="btn btn-gold">Discuss With an Advisor</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal fade" id="articleModal3" tabindex="-1" aria-labelledby="modal3Title" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div>
+              <span class="badge-editorial mb-1">Risk Management</span>
+              <h4 class="modal-title h5" id="modal3Title">Tax-Aware Portfolio Rebalancing: Preserving Net Returns</h4>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="text-muted small"><strong>Author:</strong> Marcus Holloway, ChFC® | <strong>Reading Time:</strong> 8 Minutes</p>
+            <p>Gross portfolio returns mean little if excessive taxes and turnover costs diminish net family wealth. This paper explores the quantitative principles of asset location: holding tax-inefficient assets (such as high-yield debt and REITs) in tax-deferred vehicles, and high-growth equities in taxable accounts.</p>
+            <p>Furthermore, systematic tax-loss harvesting during temporary market pullbacks generates valuable tax offsets that compound significantly over 10- and 20-year horizons.</p>
+            <div class="p-3 bg-alt rounded border border-gold small">
+              <strong>Key Takeaway:</strong> What you keep after taxes and advisory fees is the only return that ultimately funds your milestones.
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-gold" data-bs-dismiss="modal">Close</button>
+            <a href="contact.html" class="btn btn-gold">Discuss With an Advisor</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div class="modal fade" id="articleModal4" tabindex="-1" aria-labelledby="modal4Title" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div>
+              <span class="badge-editorial mb-1">Market Fundamentals</span>
+              <h4 class="modal-title h5" id="modal4Title">Navigating Interest Rate Regimes & Fixed Income</h4>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="text-muted small"><strong>Author:</strong> Dr. Sophia Al-Mansoor, Ph.D. | <strong>Reading Time:</strong> 6 Minutes</p>
+            <p>In a higher-for-longer interest rate environment, fixed income once again offers meaningful yield and structural capital defense. We break down the mathematics of duration risk, yield curve inversion signals, and credit spreads.</p>
+            <div class="p-3 bg-alt rounded border border-gold small">
+              <strong>Key Takeaway:</strong> Bond allocation should serve primarily as portfolio insurance and liquidity preservation, rather than an aggressive search for high-yield credit risk.
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-gold" data-bs-dismiss="modal">Close</button>
+            <a href="contact.html" class="btn btn-gold">Discuss With an Advisor</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 5 -->
+    <div class="modal fade" id="articleModal5" tabindex="-1" aria-labelledby="modal5Title" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div>
+              <span class="badge-editorial mb-1">Succession & Estate</span>
+              <h4 class="modal-title h5" id="modal5Title">Architecting Multi-Generational Wealth Succession</h4>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="text-muted small"><strong>Author:</strong> Eleanor Chen, CFP® | <strong>Reading Time:</strong> 9 Minutes</p>
+            <p>Intergenerational wealth transitions are among the most delicate transitions a family navigates. Beyond trust structures and tax mitigation, successful stewardship requires cultivating shared family financial literacy and clear values.</p>
+            <div class="p-3 bg-alt rounded border border-gold small">
+              <strong>Key Takeaway:</strong> Preparing the next generation for capital stewardship is as vital as preparing the capital for the next generation.
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-gold" data-bs-dismiss="modal">Close</button>
+            <a href="contact.html" class="btn btn-gold">Discuss With an Advisor</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 6 -->
+    <div class="modal fade" id="articleModal6" tabindex="-1" aria-labelledby="modal6Title" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div>
+              <span class="badge-editorial mb-1">Risk Management</span>
+              <h4 class="modal-title h5" id="modal6Title">Evaluating Downside Volatility: A Fiduciary Perspective</h4>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="text-muted small"><strong>Author:</strong> Jonathan Vance, CFA | <strong>Reading Time:</strong> 6 Minutes</p>
+            <p>Market drawdowns are an inevitable reality of capital growth. Investors who panic and convert paper volatility into realized capital losses cripple their financial independence. We detail how establishing structured cash flow buffers mitigates the threat of forced liquidations.</p>
+            <div class="p-3 bg-alt rounded border border-gold small">
+              <strong>Key Takeaway:</strong> True financial peace of mind comes from knowing your immediate cash needs are insulated from market declines.
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-gold" data-bs-dismiss="modal">Close</button>
+            <a href="contact.html" class="btn btn-gold">Discuss With an Advisor</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- =========================================================================
+       MASTER INSTITUTIONAL FOOTER
+       ========================================================================= -->
+  <footer class="wb-footer">
+    <div class="container">
+      <div class="row g-5">
+        
+        <div class="col-lg-4">
+          <a href="index.html" class="d-inline-block mb-3">
+            <img src="assets/images/logo-dark.svg" alt="Wealth Bridge Logo" class="brand-logo-img" style="height: 38px;">
+          </a>
+          <p class="small text-secondary mb-3">
+            Wealth Bridge is a professional investment advisory brand dedicated to helping discerning individuals, families, and institutions make informed financial decisions through structured guidance and risk-disciplined portfolio strategies.
+          </p>
+          <div class="text-gold small fw-semibold">
+            <i class="bi bi-quote"></i> Build Wealth With Clarity. Invest With Confidence.
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <h4>Explore Firm</h4>
+          <ul class="wb-footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Firm</a></li>
+            <li><a href="advisory-services.html">Advisory Services</a></li>
+            <li><a href="investment-approach.html">Our Approach</a></li>
+            <li><a href="insights.html">Insights & Research</a></li>
+            <li><a href="contact.html">Contact Advisory</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-3">
+          <h4>Advisory Solutions</h4>
+          <ul class="wb-footer-links">
+            <li><a href="advisory-services.html#service-investment-advisory">Investment Advisory</a></li>
+            <li><a href="advisory-services.html#service-wealth-planning">Wealth Planning</a></li>
+            <li><a href="advisory-services.html#service-portfolio-strategy">Portfolio Strategy</a></li>
+            <li><a href="advisory-services.html#service-goal-planning">Goal-Based Financial Planning</a></li>
+            <li><a href="advisory-services.html#service-risk-assessment">Risk Assessment</a></li>
+            <li><a href="advisory-services.html#service-financial-guidance">Financial Guidance</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <h4>Advisory Inquiries</h4>
+          <p class="small text-secondary mb-2">
+            <i class="bi bi-geo-alt text-gold me-2"></i>Executive Advisory Suite, Financial District
+          </p>
+          <p class="small text-secondary mb-2">
+            <i class="bi bi-telephone text-gold me-2"></i>+1 (800) 555-0198 (Mon–Fri, 9am–5pm)
+          </p>
+          <p class="small text-secondary mb-3">
+            <i class="bi bi-envelope text-gold me-2"></i>advisory@wealthbridge.com
+          </p>
+          <div class="d-flex gap-2">
+            <a href="login.html" class="btn btn-outline-gold btn-sm">Client Login</a>
+            <a href="signup.html" class="btn btn-gold btn-sm">Register</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-disclaimer-box">
+        <strong>REGULATORY AND FIDUCIARY DISCLOSURE:</strong> Wealth Bridge is an independent investment advisory firm. All materials, articles, and commentary provided on this website are for educational and informational purposes only and do not constitute personalized investment advice, a legal guarantee of performance, or a solicitation to purchase or sell any specific securities. Investment strategies involve the risk of loss of principal. Advisory engagements commence solely upon formal execution of a client advisory agreement and thorough assessment of investor suitability. Please read our <a href="risk-disclosures.html" class="text-gold text-decoration-underline">complete Risk Disclosures</a>.
+      </div>
+
+      <div class="footer-bottom">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+          <div>
+            &copy; 2026 Wealth Bridge Advisory Group. All rights reserved.
+          </div>
+          <div class="footer-bottom-links">
+            <a href="risk-disclosures.html">Risk Disclosures</a>
+            <a href="risk-disclosures.html#privacy">Privacy Policy</a>
+            <a href="risk-disclosures.html#terms">Terms of Advisory</a>
+            <a href="contact.html">Compliance Inquiries</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Main Script -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

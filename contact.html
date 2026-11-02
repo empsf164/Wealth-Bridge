@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schedule a Consultation | Wealth Bridge — Private Advisory Inquiry</title>
+  <meta name="description" content="Schedule a confidential discovery consultation with Wealth Bridge's senior investment advisors. Discuss your portfolio strategy, wealth planning, or risk assessment.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Bootstrap 5 CSS & Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Custom Design System -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       MANDATORY NAVIGATION BAR
+       ========================================================================= -->
+  <header class="wb-navbar">
+    <div class="container-fluid px-lg-5">
+      <div class="d-flex align-items-center justify-content-between">
+        
+        <a class="navbar-brand" href="index.html" aria-label="Wealth Bridge Home">
+          <img src="assets/images/logo.svg" alt="Wealth Bridge Logo" class="brand-logo-img" width="220" height="44">
+        </a>
+
+        <nav class="d-none d-xl-flex align-items-center navbar-nav flex-row">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="about.html">About</a>
+          <a class="nav-link" href="advisory-services.html">Advisory Services</a>
+          <a class="nav-link" href="investment-approach.html">Our Approach</a>
+          <a class="nav-link" href="insights.html">Insights</a>
+          <a class="nav-link" href="risk-disclosures.html">Risk Disclosures</a>
+          <a class="nav-link active" href="contact.html">Contact</a>
+        </nav>
+
+        <div class="d-flex align-items-center gap-2 gap-md-3">
+          
+          <div class="d-none d-lg-flex align-items-center gap-1 border-end pe-2 me-1 border-secondary-subtle">
+            <a href="login.html" class="nav-auth-link">Login</a>
+            <span class="text-muted" style="font-size: 0.8rem;">|</span>
+            <a href="signup.html" class="nav-auth-link">Sign Up</a>
+          </div>
+
+          <button type="button" class="theme-toggle-btn" aria-label="Toggle theme mode" title="Toggle theme">
+            <i class="bi bi-moon-stars-fill"></i>
+          </button>
+
+          <a href="contact.html" class="btn btn-gold d-none d-sm-inline-flex">
+            <span>Schedule a Consultation</span>
+            <i class="bi bi-arrow-right"></i>
+          </a>
+
+          <button class="navbar-toggler d-xl-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNavOffcanvas" aria-controls="mobileNavOffcanvas" aria-label="Open navigation menu">
+            <i class="bi bi-list fs-3"></i>
+          </button>
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Offcanvas Drawer -->
+  <div class="offcanvas offcanvas-end wb-offcanvas" tabindex="-1" id="mobileNavOffcanvas" aria-labelledby="mobileNavLabel">
+    <div class="offcanvas-header">
+      <a href="index.html" class="d-flex align-items-center">
+        <img src="assets/images/logo.svg" alt="Wealth Bridge Logo" class="brand-logo-img" style="height: 34px;">
+      </a>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close menu"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column justify-content-between p-4">
+      <nav class="nav flex-column mb-4">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="advisory-services.html">Advisory Services</a>
+        <a class="nav-link" href="investment-approach.html">Our Approach</a>
+        <a class="nav-link" href="insights.html">Insights</a>
+        <a class="nav-link" href="risk-disclosures.html">Risk Disclosures</a>
+        <a class="nav-link active" href="contact.html">Contact</a>
+      </nav>
+
+      <div class="pt-3 border-top">
+        <div class="d-flex gap-2 mb-3">
+          <a href="login.html" class="btn btn-outline-gold flex-fill text-center">Login</a>
+          <a href="signup.html" class="btn btn-gold flex-fill text-center">Sign Up</a>
+        </div>
+        <a href="contact.html" class="btn btn-navy w-100 mb-3">
+          <i class="bi bi-calendar-event me-2"></i>Schedule a Consultation
+        </a>
+        <p class="text-muted small text-center mb-0">Build Wealth With Clarity. Invest With Confidence.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       MAIN CONTENT WRAPPER
+       ========================================================================= -->
+  <main class="main-wrapper">
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="page-hero-inner">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Contact & Consultation</li>
+            </ol>
+          </nav>
+          <span class="eyebrow">CONFIDENTIAL INQUIRY</span>
+          <h1>Initiate a Thoughtful Dialogue Regarding Your Wealth.</h1>
+          <p class="lead">
+            Every successful advisory relationship begins with an exploratory discovery conversation. We listen carefully, assess fiduciary suitability, and outline structured pathways forward.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONSULTATION FORM & CONTACT SIDEBAR SECTION -->
+    <section class="section-padding section-surface" id="consultation">
+      <div class="container">
+        <div class="row g-5">
+          
+          <!-- Consultation Form Column -->
+          <div class="col-lg-7">
+            <div class="consultation-form-card">
+              <span class="badge-editorial mb-2">Discovery Session</span>
+              <h2 class="h3 mb-2">Schedule an Advisory Consultation</h2>
+              <div class="gold-divider"></div>
+              <p class="small text-muted mb-4">
+                Please complete the form below. Our senior advisory desk reviews all inquiries with complete confidentiality and will respond within one business day.
+              </p>
+
+              <form id="consultationForm" novalidate>
+                <div class="row g-3">
+                  
+                  <!-- Full Name -->
+                  <div class="col-md-6">
+                    <label for="fullName" class="form-label">Full Name <span class="required">*</span></label>
+                    <input type="text" class="form-control" id="fullName" placeholder="e.g. Eleanor Vance" required>
+                    <div class="invalid-feedback">Please provide your full legal name.</div>
+                  </div>
+
+                  <!-- Email Address -->
+                  <div class="col-md-6">
+                    <label for="emailAddress" class="form-label">Email Address <span class="required">*</span></label>
+                    <input type="email" class="form-control" id="emailAddress" placeholder="e.g. name@domain.com" required>
+                    <div class="invalid-feedback">Please enter a valid email address.</div>
+                  </div>
+
+                  <!-- Phone Number -->
+                  <div class="col-md-6">
+                    <label for="phoneNumber" class="form-label">Phone Number <span class="required">*</span></label>
+                    <input type="tel" class="form-control" id="phoneNumber" placeholder="e.g. +1 (555) 019-2834" required>
+                    <div class="invalid-feedback">Please provide a reachable phone number.</div>
+                  </div>
+
+                  <!-- Area of Interest -->
+                  <div class="col-md-6">
+                    <label for="areaOfInterest" class="form-label">Area of Interest <span class="required">*</span></label>
+                    <select class="form-select" id="areaOfInterest" required>
+                      <option value="" selected disabled>Select primary practice area...</option>
+                      <option value="Investment Advisory">Investment Advisory</option>
+                      <option value="Wealth Planning">Wealth Planning</option>
+                      <option value="Portfolio Strategy">Portfolio Strategy</option>
+                      <option value="Goal-Based Planning">Goal-Based Financial Planning</option>
+                      <option value="Risk Assessment">Risk Assessment</option>
+                      <option value="General Enquiry">General Advisory Inquiry</option>
+                    </select>
+                    <div class="invalid-feedback">Please select your primary advisory interest.</div>
+                  </div>
+
+                  <!-- Investment Goals -->
+                  <div class="col-12">
+                    <label for="investmentGoals" class="form-label">Primary Wealth Objectives / Horizon</label>
+                    <input type="text" class="form-control" id="investmentGoals" placeholder="e.g. Intergenerational wealth preservation, business transition in 3 years...">
+                    <div class="form-text">Briefly describe the key milestone or capital priority you wish to address.</div>
+                  </div>
+
+                  <!-- Preferred Consultation Date -->
+                  <div class="col-md-6">
+                    <label for="preferredDate" class="form-label">Preferred Consultation Date <span class="required">*</span></label>
+                    <input type="date" class="form-control" id="preferredDate" required>
+                    <div class="invalid-feedback">Please select a valid future consultation date.</div>
+                  </div>
+
+                  <!-- Preferred Consultation Format -->
+                  <div class="col-md-6">
+                    <label for="consultationFormat" class="form-label">Consultation Format</label>
+                    <select class="form-select" id="consultationFormat">
+                      <option value="Video Conference (Encrypted)">Encrypted Video Conference</option>
+                      <option value="Private In-Person (Executive Office)">Private In-Person Office Session</option>
+                      <option value="Direct Confidential Phone Call">Direct Advisory Phone Call</option>
+                    </select>
+                  </div>
+
+                  <!-- Message -->
+                  <div class="col-12">
+                    <label for="consultationMessage" class="form-label">Specific Details / Background Context</label>
+                    <textarea class="form-control" id="consultationMessage" rows="4" placeholder="Share any relevant context, existing balance sheet considerations, or questions for our advisory committee..."></textarea>
+                  </div>
+
+                  <!-- Fiduciary Consent -->
+                  <div class="col-12">
+                    <div class="p-3 rounded bg-alt border border-gold small">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="fiduciaryConsentCheck" required>
+                        <label class="form-check-label text-muted" for="fiduciaryConsentCheck">
+                          I acknowledge that submitting this inquiry does not establish an advisory agreement or constitute formal investment advice until formal engagement documents are executed.
+                        </label>
+                        <div class="invalid-feedback">You must acknowledge the advisory notice to submit.</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Submit Button -->
+                  <div class="col-12 mt-4">
+                    <button type="submit" class="btn btn-gold btn-lg w-100">
+                      <span>Request Confidential Consultation</span>
+                      <i class="bi bi-calendar-check ms-2"></i>
+                    </button>
+                    <div class="text-center text-muted small mt-2">
+                      <i class="bi bi-shield-lock me-1"></i>Strictly confidential. We never share or monetize your information.
+                    </div>
+                  </div>
+
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- Contact Information & Office Sidebar -->
+          <div class="col-lg-5">
+            
+            <!-- Headquarters Information -->
+            <div class="contact-info-card">
+              <h4><i class="bi bi-building"></i>Executive Advisory Headquarters</h4>
+              <p class="fw-semibold text-heading mb-1">Wealth Bridge Advisory Group</p>
+              <p class="text-muted">
+                500 Park Avenue, 28th Floor<br>
+                Financial District<br>
+                New York, NY 10022
+              </p>
+              <div class="gold-divider"></div>
+              <p class="small text-muted mb-0">
+                <i class="bi bi-info-circle text-gold me-1"></i>In-person meetings by confirmed appointment only to preserve client confidentiality.
+              </p>
+            </div>
+
+            <!-- Direct Advisory Lines -->
+            <div class="contact-info-card">
+              <h4><i class="bi bi-headset"></i>Direct Communication Lines</h4>
+              <p>
+                <strong>Advisory Desk:</strong><br>
+                <a href="tel:+18005550198" class="text-heading">+1 (800) 555-0198</a>
+              </p>
+              <p>
+                <strong>Confidential Inquiries:</strong><br>
+                <a href="mailto:advisory@wealthbridge.com" class="text-gold">advisory@wealthbridge.com</a>
+              </p>
+              <p class="mb-0">
+                <strong>Advisory Desk Hours:</strong><br>
+                Monday through Friday: 8:30 AM – 6:00 PM EST
+              </p>
+            </div>
+
+            <!-- Frequently Asked Consultation Questions -->
+            <div class="contact-info-card">
+              <h4><i class="bi bi-question-circle"></i>Consultation Expectations</h4>
+              
+              <div class="mb-3">
+                <strong class="d-block text-heading small mb-1">What occurs during the initial discovery?</strong>
+                <p class="small text-muted mb-0">
+                  The initial 45-minute consultation is a relaxed, exploratory dialogue focused on understanding your objectives, assessing portfolio structure, and determining if there is a mutual fiduciary fit.
+                </p>
+              </div>
+
+              <div class="mb-3">
+                <strong class="d-block text-heading small mb-1">What documents should I prepare?</strong>
+                <p class="small text-muted mb-0">
+                  No documents are mandatory for the first discussion. If you wish to receive a high-level second opinion, having current asset allocation summaries on hand can be beneficial.
+                </p>
+              </div>
+
+              <div>
+                <strong class="d-block text-heading small mb-1">Is there any financial commitment?</strong>
+                <p class="small text-muted mb-0">
+                  None. The discovery consultation is entirely without obligation or cost. We believe trust must be earned through intellectual rigor before any advisory agreement is considered.
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       CONFIRMATION MODAL FOR CONSULTATION SUBMISSION
+       ========================================================================= -->
+  <div class="modal fade" id="consultationConfirmationModal" tabindex="-1" aria-labelledby="modalConfirmTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-surface border-bottom border-gold">
+          <div class="d-flex align-items-center gap-2">
+            <i class="bi bi-check-circle-fill text-gold fs-4"></i>
+            <h4 class="modal-title h5 mb-0" id="modalConfirmTitle">Consultation Request Received</h4>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="text-body mb-3">
+            Thank you, <strong id="modalClientName" class="text-heading">Investor</strong>. Your consultation inquiry has been securely routed to our senior fiduciary desk.
+          </p>
+
+          <div class="p-3 rounded bg-alt border border-gold mb-3 small">
+            <div class="d-flex justify-content-between mb-1">
+              <span class="text-muted">Inquiry Reference:</span>
+              <strong id="modalRefCode" class="text-gold font-monospace">WB-729481</strong>
+            </div>
+            <div class="d-flex justify-content-between mb-1">
+              <span class="text-muted">Practice Focus:</span>
+              <span id="modalServiceArea" class="fw-semibold text-heading">Investment Advisory</span>
+            </div>
+            <div class="d-flex justify-content-between">
+              <span class="text-muted">Target Date:</span>
+              <span id="modalDate" class="fw-semibold text-heading">Selected Date</span>
+            </div>
+          </div>
+
+          <p class="small text-muted mb-0">
+            A managing advisor will review your goals and contact you via email to confirm the exact meeting calendar invite and encrypted dial-in details.
+          </p>
+
+          <div class="mt-3 p-2 bg-gold-subtle rounded small text-muted text-center">
+            <em>Demonstration notice: This simulated submission demonstrates the Wealth Bridge inquiry workflow.</em>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-gold w-100" data-bs-dismiss="modal">Acknowledge & Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       MASTER INSTITUTIONAL FOOTER
+       ========================================================================= -->
+  <footer class="wb-footer">
+    <div class="container">
+      <div class="row g-5">
+        
+        <div class="col-lg-4">
+          <a href="index.html" class="d-inline-block mb-3">
+            <img src="assets/images/logo-dark.svg" alt="Wealth Bridge Logo" class="brand-logo-img" style="height: 38px;">
+          </a>
+          <p class="small text-secondary mb-3">
+            Wealth Bridge is a professional investment advisory brand dedicated to helping discerning individuals, families, and institutions make informed financial decisions through structured guidance and risk-disciplined portfolio strategies.
+          </p>
+          <div class="text-gold small fw-semibold">
+            <i class="bi bi-quote"></i> Build Wealth With Clarity. Invest With Confidence.
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <h4>Explore Firm</h4>
+          <ul class="wb-footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Firm</a></li>
+            <li><a href="advisory-services.html">Advisory Services</a></li>
+            <li><a href="investment-approach.html">Our Approach</a></li>
+            <li><a href="insights.html">Insights & Research</a></li>
+            <li><a href="contact.html">Contact Advisory</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-3">
+          <h4>Advisory Solutions</h4>
+          <ul class="wb-footer-links">
+            <li><a href="advisory-services.html#service-investment-advisory">Investment Advisory</a></li>
+            <li><a href="advisory-services.html#service-wealth-planning">Wealth Planning</a></li>
+            <li><a href="advisory-services.html#service-portfolio-strategy">Portfolio Strategy</a></li>
+            <li><a href="advisory-services.html#service-goal-planning">Goal-Based Financial Planning</a></li>
+            <li><a href="advisory-services.html#service-risk-assessment">Risk Assessment</a></li>
+            <li><a href="advisory-services.html#service-financial-guidance">Financial Guidance</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <h4>Advisory Inquiries</h4>
+          <p class="small text-secondary mb-2">
+            <i class="bi bi-geo-alt text-gold me-2"></i>Executive Advisory Suite, Financial District
+          </p>
+          <p class="small text-secondary mb-2">
+            <i class="bi bi-telephone text-gold me-2"></i>+1 (800) 555-0198 (Mon–Fri, 9am–5pm)
+          </p>
+          <p class="small text-secondary mb-3">
+            <i class="bi bi-envelope text-gold me-2"></i>advisory@wealthbridge.com
+          </p>
+          <div class="d-flex gap-2">
+            <a href="login.html" class="btn btn-outline-gold btn-sm">Client Login</a>
+            <a href="signup.html" class="btn btn-gold btn-sm">Register</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-disclaimer-box">
+        <strong>REGULATORY AND FIDUCIARY DISCLOSURE:</strong> Wealth Bridge is an independent investment advisory firm. All materials, articles, and commentary provided on this website are for educational and informational purposes only and do not constitute personalized investment advice, a legal guarantee of performance, or a solicitation to purchase or sell any specific securities. Investment strategies involve the risk of loss of principal. Advisory engagements commence solely upon formal execution of a client advisory agreement and thorough assessment of investor suitability. Please read our <a href="risk-disclosures.html" class="text-gold text-decoration-underline">complete Risk Disclosures</a>.
+      </div>
+
+      <div class="footer-bottom">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+          <div>
+            &copy; 2026 Wealth Bridge Advisory Group. All rights reserved.
+          </div>
+          <div class="footer-bottom-links">
+            <a href="risk-disclosures.html">Risk Disclosures</a>
+            <a href="risk-disclosures.html#privacy">Privacy Policy</a>
+            <a href="risk-disclosures.html#terms">Terms of Advisory</a>
+            <a href="contact.html">Compliance Inquiries</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Main Script -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- Query Parameter Handler for Pre-filling Area of Interest -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const serviceParam = urlParams.get('service');
+      if (serviceParam) {
+        const areaSelect = document.getElementById('areaOfInterest');
+        if (areaSelect) {
+          for (let i = 0; i < areaSelect.options.length; i++) {
+            if (areaSelect.options[i].text.toLowerCase().includes(serviceParam.toLowerCase()) || 
+                serviceParam.toLowerCase().includes(areaSelect.options[i].value.toLowerCase())) {
+              areaSelect.selectedIndex = i;
+              break;
+            }
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>

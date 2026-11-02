@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wealth Bridge | Investment Advisory — Build Wealth With Clarity. Invest With Confidence.</title>
+  <meta name="description" content="Wealth Bridge is a premier private investment advisory firm providing research-led wealth planning, portfolio strategy, and fiduciary guidance for discerning individuals and institutions.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Bootstrap 5 CSS & Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Custom Design System -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       MANDATORY NAVIGATION BAR
+       ========================================================================= -->
+  <header class="wb-navbar">
+    <div class="container-fluid px-lg-5">
+      <div class="d-flex align-items-center justify-content-between">
+        
+        <!-- Brand Logo -->
+        <a class="navbar-brand" href="index.html" aria-label="Wealth Bridge Home">
+          <img src="assets/images/logo.svg" alt="Wealth Bridge Logo" class="brand-logo-img" width="220" height="44">
+        </a>
+
+        <!-- Desktop Navigation Items -->
+        <nav class="d-none d-xl-flex align-items-center navbar-nav flex-row">
+          <a class="nav-link active" href="index.html">Home</a>
+          <a class="nav-link" href="about.html">About</a>
+          <a class="nav-link" href="advisory-services.html">Advisory Services</a>
+          <a class="nav-link" href="investment-approach.html">Our Approach</a>
+          <a class="nav-link" href="insights.html">Insights</a>
+          <a class="nav-link" href="risk-disclosures.html">Risk Disclosures</a>
+          <a class="nav-link" href="contact.html">Contact</a>
+        </nav>
+
+        <!-- Navbar Actions (Auth, Theme Toggle, CTA) -->
+        <div class="d-flex align-items-center gap-2 gap-md-3">
+          
+          <!-- Auth links (Desktop) -->
+          <div class="d-none d-lg-flex align-items-center gap-1 border-end pe-2 me-1 border-secondary-subtle">
+            <a href="login.html" class="nav-auth-link">Login</a>
+            <span class="text-muted" style="font-size: 0.8rem;">|</span>
+            <a href="signup.html" class="nav-auth-link">Sign Up</a>
+          </div>
+
+          <!-- Theme Toggle -->
+          <button type="button" class="theme-toggle-btn" aria-label="Toggle theme mode" title="Toggle theme">
+            <i class="bi bi-moon-stars-fill"></i>
+          </button>
+
+          <!-- Highlighted Mandatory CTA Button -->
+          <a href="contact.html" class="btn btn-gold d-none d-sm-inline-flex">
+            <span>Schedule a Consultation</span>
+            <i class="bi bi-arrow-right"></i>
+          </a>
+
+          <!-- Mobile Hamburger Trigger -->
+          <button class="navbar-toggler d-xl-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNavOffcanvas" aria-controls="mobileNavOffcanvas" aria-label="Open navigation menu">
+            <i class="bi bi-list fs-3"></i>
+          </button>
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Offcanvas Drawer -->
+  <div class="offcanvas offcanvas-end wb-offcanvas" tabindex="-1" id="mobileNavOffcanvas" aria-labelledby="mobileNavLabel">
+    <div class="offcanvas-header">
+      <a href="index.html" class="d-flex align-items-center">
+        <img src="assets/images/logo.svg" alt="Wealth Bridge Logo" class="brand-logo-img" style="height: 34px;">
+      </a>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close menu"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column justify-content-between p-4">
+      <nav class="nav flex-column mb-4">
+        <a class="nav-link active" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="advisory-services.html">Advisory Services</a>
+        <a class="nav-link" href="investment-approach.html">Our Approach</a>
+        <a class="nav-link" href="insights.html">Insights</a>
+        <a class="nav-link" href="risk-disclosures.html">Risk Disclosures</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </nav>
+
+      <div class="pt-3 border-top">
+        <div class="d-flex gap-2 mb-3">
+          <a href="login.html" class="btn btn-outline-gold flex-fill text-center">Login</a>
+          <a href="signup.html" class="btn btn-gold flex-fill text-center">Sign Up</a>
+        </div>
+        <a href="contact.html" class="btn btn-navy w-100 mb-3">
+          <i class="bi bi-calendar-event me-2"></i>Schedule a Consultation
+        </a>
+        <p class="text-muted small text-center mb-0">Build Wealth With Clarity. Invest With Confidence.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       MAIN CONTENT WRAPPER
+       ========================================================================= -->
+  <main class="main-wrapper">
+
+    <!-- HERO SECTION -->
+    <section class="hero-flagship">
+      <img src="assets/images/hero_wealth_bridge.jpg" alt="Wealth Bridge Boardroom Advisory Suite" class="hero-bg-media">
+      <div class="hero-overlay-gradient"></div>
+
+      <div class="container position-relative z-2">
+        <div class="row align-items-center py-lg-4">
+          <div class="col-lg-9 col-xl-8">
+            
+            <div class="eyebrow">INDEPENDENT FIDUCIARY PERSPECTIVE</div>
+            <h1 class="display-4 fw-bold text-white mb-3">
+              A Clearer Path to Your Financial Future.
+            </h1>
+            <p class="lead">
+              Thoughtful investment guidance, disciplined strategies and informed decisions for every stage of your wealth journey.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="contact.html" class="btn btn-gold btn-lg">
+                <span>Schedule a Consultation</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+              <a href="investment-approach.html" class="btn btn-outline-gold btn-lg">
+                <span>Explore Our Approach</span>
+              </a>
+            </div>
+
+            <!-- Trust and Expertise Pillars Strip -->
+            <div class="hero-trust-strip mt-4">
+              <div class="trust-pillar-item">
+                <i class="bi bi-shield-check trust-pillar-icon"></i>
+                <div>
+                  <h4>Fiduciary Duty</h4>
+                  <p>Uncompromising commitment to putting client interests first at all times.</p>
+                </div>
+              </div>
+              <div class="trust-pillar-item">
+                <i class="bi bi-graph-up-arrow trust-pillar-icon"></i>
+                <div>
+                  <h4>Disciplined Framework</h4>
+                  <p>Risk-calibrated asset allocation governed by empirical research, not market hype.</p>
+                </div>
+              </div>
+              <div class="trust-pillar-item">
+                <i class="bi bi-eye trust-pillar-icon"></i>
+                <div>
+                  <h4>Transparent Structure</h4>
+                  <p>Clear fee disclosures, objective guidance, and zero proprietary product bias.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST & EXPERTISE PHILOSOPHY -->
+    <section class="section-padding section-surface">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <div class="position-relative">
+              <div class="ratio ratio-4x3 rounded overflow-hidden shadow-lg border" style="border-color: var(--wb-border-gold) !important;">
+                <img src="assets/images/consultation_meeting.jpg" alt="Wealth Bridge Senior Advisors in Private Consultation" class="w-100 h-100 object-fit-cover">
+              </div>
+              <!-- Floating Highlight Badge -->
+              <div class="position-absolute bottom-0 start-0 m-4 p-3 rounded shadow-lg bg-surface border border-gold d-none d-md-block" style="max-width: 280px;">
+                <div class="d-flex align-items-center gap-3">
+                  <div class="service-icon-wrap mb-0" style="width: 44px; height: 44px; font-size: 1.25rem;">
+                    <i class="bi bi-award"></i>
+                  </div>
+                  <div>
+                    <h5 class="h6 mb-0 text-heading">Fiduciary Integrity</h5>
+                    <small class="text-muted">Rigorous Advisory Standards</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <span class="eyebrow">OUR ADVISORY CREED</span>
+            <h2 class="mb-3">Objective Counsel Built On Rigor and Intellectual Transparency.</h2>
+            <div class="gold-divider"></div>
+            <p class="lead text-muted">
+              In an investment landscape saturated with short-term speculation and opaque products, Wealth Bridge provides an institutional compass for long-term capital preservation and purposeful growth.
+            </p>
+            <p>
+              We believe wealth management is not about predicting market noise or chasing volatile trends. True financial stability demands structured investment guidance, deep understanding of individual objectives, disciplined risk mitigation, and continuous communication.
+            </p>
+            <ul class="service-feature-list mb-4">
+              <li><strong>Evidence-Based Methodology:</strong> Grounded in empirical capital market research and modern portfolio theory.</li>
+              <li><strong>Personalized Mandates:</strong> Structured specifically around your family milestones, enterprise horizon, and liquidity needs.</li>
+              <li><strong>Zero Speculative Bias:</strong> We prioritize capital preservation and asymmetric risk-adjusted compounding.</li>
+            </ul>
+            <a href="about.html" class="editorial-link">
+              <span>Learn More About Our Governance and Heritage</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CORE ADVISORY SERVICES SECTION -->
+    <section class="section-padding section-alt">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="eyebrow eyebrow-center">OUR EXPERTISE</span>
+          <h2>Comprehensive Advisory Services</h2>
+          <div class="gold-divider center"></div>
+          <p class="text-muted">
+            Structured investment solutions tailored for high-net-worth families, enterprise leaders, and forward-looking individuals.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          
+          <!-- Service 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card">
+              <div class="service-icon-wrap">
+                <i class="bi bi-briefcase"></i>
+              </div>
+              <span class="service-meta-badge">Core Mandate</span>
+              <h3>Investment Advisory</h3>
+              <p>
+                Objective, fiduciary advice on strategic capital allocation, manager selection, and disciplined portfolio implementation designed for long-term compound growth.
+              </p>
+              <a href="advisory-services.html#service-investment-advisory" class="editorial-link mt-auto">
+                <span>Explore Service Details</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card">
+              <div class="service-icon-wrap">
+                <i class="bi bi-compass"></i>
+              </div>
+              <span class="service-meta-badge">Holistic Planning</span>
+              <h3>Wealth Planning</h3>
+              <p>
+                End-to-end wealth architecture integrating intergenerational succession, estate structures, liquidity horizons, and tax-efficient capital distribution.
+              </p>
+              <a href="advisory-services.html#service-wealth-planning" class="editorial-link mt-auto">
+                <span>Explore Service Details</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card">
+              <div class="service-icon-wrap">
+                <i class="bi bi-pie-chart"></i>
+              </div>
+              <span class="service-meta-badge">Asset Allocation</span>
+              <h3>Portfolio Strategy</h3>
+              <p>
+                Systematic asset class diversification across public equities, fixed income, real assets, and defensive liquid holdings aligned with your risk tolerance.
+              </p>
+              <a href="advisory-services.html#service-portfolio-strategy" class="editorial-link mt-auto">
+                <span>Explore Service Details</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card">
+              <div class="service-icon-wrap">
+                <i class="bi bi-bullseye"></i>
+              </div>
+              <span class="service-meta-badge">Milestone Focused</span>
+              <h3>Goal-Based Planning</h3>
+              <p>
+                Deconstruct major life milestones—from business exits to retirement and philanthropic legacies—into structured, measurable capital accumulation phases.
+              </p>
+              <a href="advisory-services.html#service-goal-planning" class="editorial-link mt-auto">
+                <span>Explore Service Details</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Service 5 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card">
+              <div class="service-icon-wrap">
+                <i class="bi bi-shield-shaded"></i>
+              </div>
+              <span class="service-meta-badge">Capital Defense</span>
+              <h3>Risk Assessment</h3>
+              <p>
+                Comprehensive stress-testing of existing holdings against geopolitical shocks, inflation cycles, interest rate changes, and systemic liquidity events.
+              </p>
+              <a href="advisory-services.html#service-risk-assessment" class="editorial-link mt-auto">
+                <span>Explore Service Details</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Service 6 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card">
+              <div class="service-icon-wrap">
+                <i class="bi bi-book"></i>
+              </div>
+              <span class="service-meta-badge">Investor Literacy</span>
+              <h3>Financial Guidance</h3>
+              <p>
+                Continuous consultative dialogue and financial education to demystify market mechanics, empower family members, and cultivate enduring discipline.
+              </p>
+              <a href="advisory-services.html#service-financial-guidance" class="editorial-link mt-auto">
+                <span>Explore Service Details</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="text-center mt-5">
+          <a href="advisory-services.html" class="btn btn-gold btn-lg">
+            <span>View All Advisory Solutions & Process Specifications</span>
+            <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- OUR INVESTMENT APPROACH (VISUAL PROCESS) -->
+    <section class="section-padding section-surface">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="eyebrow eyebrow-center">DISCIPLINED METHODOLOGY</span>
+          <h2>Our Four-Stage Investment Process</h2>
+          <div class="gold-divider center"></div>
+          <p class="text-muted">
+            A repeatable, transparent framework designed to transform complex financial goals into an actionable, resilient strategy.
+          </p>
+        </div>
+
+        <div class="process-grid">
+          
+          <div class="process-step-card">
+            <span class="process-num">01</span>
+            <h4>Understand Goals</h4>
+            <p>
+              We commence with an in-depth discovery of your financial balance sheet, family values, time horizons, cash flow expectations, and legacy priorities.
+            </p>
+          </div>
+
+          <div class="process-step-card">
+            <span class="process-num">02</span>
+            <h4>Assess Risk</h4>
+            <p>
+              We evaluate your psychological and structural risk capacity through scenario analysis, drawdown tolerance mapping, and liquidity requirements.
+            </p>
+          </div>
+
+          <div class="process-step-card">
+            <span class="process-num">03</span>
+            <h4>Develop Strategy</h4>
+            <p>
+              Our committee crafts a bespoke Investment Policy Statement (IPS) detailing strategic asset allocation, rebalancing rules, and tax considerations.
+            </p>
+          </div>
+
+          <div class="process-step-card">
+            <span class="process-num">04</span>
+            <h4>Review & Monitor</h4>
+            <p>
+              Ongoing oversight with disciplined periodic rebalancing, risk stress-testing, and scheduled reviews to maintain fidelity to your core objectives.
+            </p>
+          </div>
+
+        </div>
+
+        <div class="mt-5 p-4 rounded border border-gold bg-alt text-center">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-lg-8">
+              <h4 class="mb-2">Seeking a structured second opinion on your current portfolio?</h4>
+              <p class="mb-0 text-muted">Our advisory committee offers objective reviews without obligation.</p>
+            </div>
+            <div class="col-lg-3 text-lg-end mt-3 mt-lg-0">
+              <a href="contact.html" class="btn btn-navy">Request a Portfolio Review</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- WHY WEALTH BRIDGE (CREDIBILITY & INTEGRITY) -->
+    <section class="section-padding section-navy">
+      <div class="container">
+        
+        <div class="row align-items-center g-5">
+          <div class="col-lg-5">
+            <span class="eyebrow" style="color: #CBB482;">DISTINCTIVE ADVANTAGES</span>
+            <h2 class="text-white mb-3">Why Discerning Investors Choose Wealth Bridge.</h2>
+            <div class="gold-divider"></div>
+            <p class="lead" style="color: #CAD5E2;">
+              We operate exclusively as objective fiduciaries. We do not sell proprietary financial products, accept third-party commissions, or engage in speculative trading.
+            </p>
+            <p style="color: #9BB0C7;">
+              Our single metric of success is whether our clients successfully achieve their long-term wealth milestones while maintaining prudent sleep-at-night risk parameters.
+            </p>
+            <div class="mt-4">
+              <a href="about.html" class="btn btn-gold">
+                <span>Explore Our Heritage & Values</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="row g-4">
+              
+              <div class="col-sm-6">
+                <div class="p-4 rounded border border-secondary-subtle h-100" style="background-color: rgba(255, 255, 255, 0.04);">
+                  <div class="text-gold fs-2 mb-3"><i class="bi bi-mortarboard"></i></div>
+                  <h4 class="text-white h5">Research-Led Thinking</h4>
+                  <p class="small mb-0" style="color: #9BB0C7;">
+                    Advisory recommendations based on rigorous macroeconomic research, peer-reviewed financial economics, and empirical market cycles.
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="p-4 rounded border border-secondary-subtle h-100" style="background-color: rgba(255, 255, 255, 0.04);">
+                  <div class="text-gold fs-2 mb-3"><i class="bi bi-chat-left-dots"></i></div>
+                  <h4 class="text-white h5">Transparent Communication</h4>
+                  <p class="small mb-0" style="color: #9BB0C7;">
+                    Complete clarity on fee models, asset performance, and portfolio positioning. No jargon, hidden costs, or selective reporting.
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="p-4 rounded border border-secondary-subtle h-100" style="background-color: rgba(255, 255, 255, 0.04);">
+                  <div class="text-gold fs-2 mb-3"><i class="bi bi-hourglass-split"></i></div>
+                  <h4 class="text-white h5">Long-Term Perspective</h4>
+                  <p class="small mb-0" style="color: #9BB0C7;">
+                    We insulate portfolios from transient headline panic, anchoring all strategic adjustments to decade-long wealth horizons.
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="p-4 rounded border border-secondary-subtle h-100" style="background-color: rgba(255, 255, 255, 0.04);">
+                  <div class="text-gold fs-2 mb-3"><i class="bi bi-shield-lock"></i></div>
+                  <h4 class="text-white h5">Risk-Aware Guidance</h4>
+                  <p class="small mb-0" style="color: #9BB0C7;">
+                    Preservation is paramount. We view risk as permanent loss of capital, not temporary quotes, and structure defensive buffers accordingly.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- MEET THE TEAM (VERIFIED-STYLE CREDENTIALS) -->
+    <section class="section-padding section-surface">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="eyebrow eyebrow-center">ADVISORY LEADERSHIP</span>
+          <h2>Meet Our Advisory Committee</h2>
+          <div class="gold-divider center"></div>
+          <p class="text-muted">
+            Seasoned practitioners holding distinguished credentials (CFA®, CFP®, ChFC®) and dedicated to intellectual rigor and client fiduciary stewardship.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          
+          <!-- Advisor 1: Jonathan Vance -->
+          <div class="col-md-6 col-lg-3">
+            <div class="advisor-card">
+              <div class="advisor-img-wrap">
+                <img src="assets/images/advisor_vance.jpg" alt="Jonathan Vance, CFA - Managing Partner" loading="lazy">
+                <div class="advisor-badge-strip">
+                  <span class="credential-pill">CFA® Charterholder</span>
+                </div>
+              </div>
+              <div class="advisor-content">
+                <h3>Jonathan Vance</h3>
+                <div class="advisor-title">Managing Partner & Chief Strategist</div>
+                <p class="advisor-bio">
+                  Leads the firm's strategic asset allocation committee with 24+ years of institutional fiduciary experience.
+                </p>
+                <div class="advisor-meta">
+                  <div class="advisor-meta-item"><strong>Focus:</strong> Macro Allocation & Preservation</div>
+                  <div class="advisor-meta-item"><strong>Education:</strong> Harvard Business School (MBA)</div>
+                </div>
+                <button type="button" class="btn btn-outline-gold btn-sm w-100 mt-3 view-credentials-btn" data-advisor="vance">
+                  <i class="bi bi-file-earmark-person me-1"></i>View Credentials
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Advisor 2: Eleanor Chen -->
+          <div class="col-md-6 col-lg-3">
+            <div class="advisor-card">
+              <div class="advisor-img-wrap">
+                <img src="assets/images/advisor_chen.jpg" alt="Eleanor Chen, CFP® - Principal" loading="lazy">
+                <div class="advisor-badge-strip">
+                  <span class="credential-pill">CFP® Professional</span>
+                </div>
+              </div>
+              <div class="advisor-content">
+                <h3>Eleanor Chen</h3>
+                <div class="advisor-title">Principal, Private Wealth Advisory</div>
+                <p class="advisor-bio">
+                  Specializes in inter-generational wealth architecture, family estate governance, and tax-efficient structures.
+                </p>
+                <div class="advisor-meta">
+                  <div class="advisor-meta-item"><strong>Focus:</strong> Family Wealth & Succession</div>
+                  <div class="advisor-meta-item"><strong>Education:</strong> Columbia University (M.S.)</div>
+                </div>
+                <button type="button" class="btn btn-outline-gold btn-sm w-100 mt-3 view-credentials-btn" data-advisor="chen">
+                  <i class="bi bi-file-earmark-person me-1"></i>View Credentials
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Advisor 3: Marcus Holloway -->
+          <div class="col-md-6 col-lg-3">
+            <div class="advisor-card">
+              <div class="advisor-img-wrap">
+                <img src="assets/images/advisor_holloway.jpg" alt="Marcus Holloway, ChFC® - Director" loading="lazy">
+                <div class="advisor-badge-strip">
+                  <span class="credential-pill">ChFC® Consultant</span>
+                </div>
+              </div>
+              <div class="advisor-content">
+                <h3>Marcus Holloway</h3>
+                <div class="advisor-title">Director of Portfolio Strategy</div>
+                <p class="advisor-bio">
+                  Directs quantitative stress-testing, risk factor decomposition, and disciplined portfolio rebalancing frameworks.
+                </p>
+                <div class="advisor-meta">
+                  <div class="advisor-meta-item"><strong>Focus:</strong> Quantitative Risk & Liquidity</div>
+                  <div class="advisor-meta-item"><strong>Education:</strong> Univ. of Chicago (M.S.)</div>
+                </div>
+                <button type="button" class="btn btn-outline-gold btn-sm w-100 mt-3 view-credentials-btn" data-advisor="holloway">
+                  <i class="bi bi-file-earmark-person me-1"></i>View Credentials
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Advisor 4: Dr. Sophia Al-Mansoor -->
+          <div class="col-md-6 col-lg-3">
+            <div class="advisor-card">
+              <div class="advisor-img-wrap">
+                <img src="assets/images/advisor_mansoor.jpg" alt="Dr. Sophia Al-Mansoor, Ph.D. - Research Head" loading="lazy">
+                <div class="advisor-badge-strip">
+                  <span class="credential-pill">Ph.D. Economics</span>
+                </div>
+              </div>
+              <div class="advisor-content">
+                <h3>Dr. Sophia Al-Mansoor</h3>
+                <div class="advisor-title">Head of Investment Research</div>
+                <p class="advisor-bio">
+                  Heads capital market expectations, monetary policy research, and empirical portfolio governance.
+                </p>
+                <div class="advisor-meta">
+                  <div class="advisor-meta-item"><strong>Focus:</strong> Macro Regimes & Policy</div>
+                  <div class="advisor-meta-item"><strong>Education:</strong> London School of Economics</div>
+                </div>
+                <button type="button" class="btn btn-outline-gold btn-sm w-100 mt-3 view-credentials-btn" data-advisor="mansoor">
+                  <i class="bi bi-file-earmark-person me-1"></i>View Credentials
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="text-center mt-5">
+          <small class="text-muted d-block mb-3">Advisor profiles represent our senior fiduciary committee and their respective verified educational foundations.</small>
+          <a href="about.html#team" class="editorial-link">
+            <span>Read Complete Biographical & Fiduciary Backgrounds</span>
+            <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FINANCIAL INSIGHTS & EDITORIAL PREVIEWS -->
+    <section class="section-padding section-alt">
+      <div class="container">
+        
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-4 pb-2">
+          <div>
+            <span class="eyebrow">RESEARCH & COMMENTARY</span>
+            <h2>Financial Insights & Thought Leadership</h2>
+            <div class="gold-divider"></div>
+          </div>
+          <div class="mt-3 mt-md-0">
+            <a href="insights.html" class="editorial-link">
+              <span>View All Research Articles</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          
+          <!-- Article 1 -->
+          <div class="col-md-6 col-lg-4">
+            <article class="insight-card">
+              <div class="insight-img-wrap">
+                <img src="assets/images/insight_1.jpg" alt="Asset Allocation Across Shifting Economic Cycles" loading="lazy">
+                <span class="insight-category-badge">Investment Strategy</span>
+              </div>
+              <div class="insight-content">
+                <div class="insight-meta">
+                  <span><i class="bi bi-clock me-1"></i>7 Min Read</span>
+                  <span>•</span>
+                  <span>By Jonathan Vance, CFA</span>
+                </div>
+                <h3>Asset Allocation Across Shifting Economic Cycles</h3>
+                <p>
+                  Why static portfolio models falter during macro inflection points, and how adaptive diversification safeguards purchasing power.
+                </p>
+                <a href="insights.html" class="editorial-link mt-auto">
+                  <span>Read Article</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Article 2 -->
+          <div class="col-md-6 col-lg-4">
+            <article class="insight-card">
+              <div class="insight-img-wrap">
+                <img src="assets/images/insight_2.jpg" alt="The Behavioral Psychology of Long-Term Investing Discipline" loading="lazy">
+                <span class="insight-category-badge">Wealth Planning</span>
+              </div>
+              <div class="insight-content">
+                <div class="insight-meta">
+                  <span><i class="bi bi-clock me-1"></i>5 Min Read</span>
+                  <span>•</span>
+                  <span>By Eleanor Chen, CFP®</span>
+                </div>
+                <h3>The Psychology of Long-Term Investing Discipline</h3>
+                <p>
+                  Mitigating the cognitive biases that lead investors to sell during drawdowns and overcommit at market peaks.
+                </p>
+                <a href="insights.html" class="editorial-link mt-auto">
+                  <span>Read Article</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Article 3 -->
+          <div class="col-md-6 col-lg-4">
+            <article class="insight-card">
+              <div class="insight-img-wrap">
+                <img src="assets/images/insight_3.jpg" alt="Tax-Aware Portfolio Rebalancing: Preserving Real Net Returns" loading="lazy">
+                <span class="insight-category-badge">Risk Management</span>
+              </div>
+              <div class="insight-content">
+                <div class="insight-meta">
+                  <span><i class="bi bi-clock me-1"></i>8 Min Read</span>
+                  <span>•</span>
+                  <span>By Marcus Holloway, ChFC®</span>
+                </div>
+                <h3>Tax-Aware Portfolio Rebalancing: Preserving Net Returns</h3>
+                <p>
+                  A quantitative look at asset location, tax-loss harvesting thresholds, and disciplined threshold rebalancing protocols.
+                </p>
+                <a href="insights.html" class="editorial-link mt-auto">
+                  <span>Read Article</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </article>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROMINENT RISK AWARENESS CALLOUT -->
+    <section class="section-padding-sm section-surface">
+      <div class="container">
+        <div class="risk-callout-box">
+          <div class="row align-items-center">
+            <div class="col-lg-9">
+              <h4>
+                <i class="bi bi-shield-exclamation text-gold fs-5"></i>
+                <span>Important Risk Awareness & Transparency Notice</span>
+              </h4>
+              <p>
+                Investing in financial markets involves risk, including the possible loss of principal capital. Past performance is no guarantee of future results. Asset allocation and diversification strategies do not guarantee a profit or protect against loss in declining markets. We encourage all prospective clients to review our detailed disclosures regarding advisory scope, limitations, and regulatory standards.
+              </p>
+            </div>
+            <div class="col-lg-3 text-lg-end mt-3 mt-lg-0">
+              <a href="risk-disclosures.html" class="btn btn-outline-gold">
+                <span>Read Full Risk Disclosures</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CALL TO ACTION SECTION -->
+    <section class="section-padding section-navy text-center position-relative overflow-hidden">
+      <div class="container position-relative z-2">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <span class="eyebrow eyebrow-center" style="color: #CBB482;">START A MEANINGFUL CONVERSATION</span>
+            <h2 class="display-6 text-white mb-3">Make Your Next Financial Decision an Informed One.</h2>
+            <div class="gold-divider center"></div>
+            <p class="lead mb-4" style="color: #CAD5E2;">
+              Whether you are evaluating your overall wealth strategy, structuring multi-generational assets, or seeking a second opinion on your portfolio, our advisory committee is here to assist.
+            </p>
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+              <a href="contact.html" class="btn btn-gold btn-lg">
+                <span>Schedule a Consultation</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+              <a href="advisory-services.html" class="btn btn-outline-gold btn-lg">
+                <span>Review Advisory Services</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       MASTER INSTITUTIONAL FOOTER
+       ========================================================================= -->
+  <footer class="wb-footer">
+    <div class="container">
+      <div class="row g-5">
+        
+        <!-- Brand Summary -->
+        <div class="col-lg-4">
+          <a href="index.html" class="d-inline-block mb-3">
+            <img src="assets/images/logo-dark.svg" alt="Wealth Bridge Logo" class="brand-logo-img" style="height: 38px;">
+          </a>
+          <p class="small text-secondary mb-3">
+            Wealth Bridge is a professional investment advisory brand dedicated to helping discerning individuals, families, and institutions make informed financial decisions through structured guidance and risk-disciplined portfolio strategies.
+          </p>
+          <div class="text-gold small fw-semibold">
+            <i class="bi bi-quote"></i> Build Wealth With Clarity. Invest With Confidence.
+          </div>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <h4>Explore Firm</h4>
+          <ul class="wb-footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Firm</a></li>
+            <li><a href="advisory-services.html">Advisory Services</a></li>
+            <li><a href="investment-approach.html">Our Approach</a></li>
+            <li><a href="insights.html">Insights & Research</a></li>
+            <li><a href="contact.html">Contact Advisory</a></li>
+          </ul>
+        </div>
+
+        <!-- Advisory Solutions -->
+        <div class="col-6 col-md-3 col-lg-3">
+          <h4>Advisory Solutions</h4>
+          <ul class="wb-footer-links">
+            <li><a href="advisory-services.html#service-investment-advisory">Investment Advisory</a></li>
+            <li><a href="advisory-services.html#service-wealth-planning">Wealth Planning</a></li>
+            <li><a href="advisory-services.html#service-portfolio-strategy">Portfolio Strategy</a></li>
+            <li><a href="advisory-services.html#service-goal-planning">Goal-Based Financial Planning</a></li>
+            <li><a href="advisory-services.html#service-risk-assessment">Risk Assessment</a></li>
+            <li><a href="advisory-services.html#service-financial-guidance">Financial Guidance</a></li>
+          </ul>
+        </div>
+
+        <!-- Consultation & Access -->
+        <div class="col-md-6 col-lg-3">
+          <h4>Advisory Inquiries</h4>
+          <p class="small text-secondary mb-2">
+            <i class="bi bi-geo-alt text-gold me-2"></i>Executive Advisory Suite, Financial District
+          </p>
+          <p class="small text-secondary mb-2">
+            <i class="bi bi-telephone text-gold me-2"></i>+1 (800) 555-0198 (Mon–Fri, 9am–5pm)
+          </p>
+          <p class="small text-secondary mb-3">
+            <i class="bi bi-envelope text-gold me-2"></i>advisory@wealthbridge.com
+          </p>
+          <div class="d-flex gap-2">
+            <a href="login.html" class="btn btn-outline-gold btn-sm">Client Login</a>
+            <a href="signup.html" class="btn btn-gold btn-sm">Register</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Regulatory Disclaimer Box -->
+      <div class="footer-disclaimer-box">
+        <strong>REGULATORY AND FIDUCIARY DISCLOSURE:</strong> Wealth Bridge is an independent investment advisory firm. All materials, articles, and commentary provided on this website are for educational and informational purposes only and do not constitute personalized investment advice, a legal guarantee of performance, or a solicitation to purchase or sell any specific securities. Investment strategies involve the risk of loss of principal. Advisory engagements commence solely upon formal execution of a client advisory agreement and thorough assessment of investor suitability. Please read our <a href="risk-disclosures.html" class="text-gold text-decoration-underline">complete Risk Disclosures</a>.
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+          <div>
+            &copy; <span id="currentYear">2026</span> Wealth Bridge Advisory Group. All rights reserved.
+          </div>
+          <div class="footer-bottom-links">
+            <a href="risk-disclosures.html">Risk Disclosures</a>
+            <a href="risk-disclosures.html#privacy">Privacy Policy</a>
+            <a href="risk-disclosures.html#terms">Terms of Advisory</a>
+            <a href="contact.html">Compliance Inquiries</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       ADVISOR CREDENTIALS MODAL
+       ========================================================================= -->
+  <div class="modal fade" id="advisorCredentialsModal" tabindex="-1" aria-labelledby="advisorModalName" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div>
+            <h4 class="modal-title h5 mb-0" id="advisorModalName">Advisor Name</h4>
+            <span class="text-gold small fw-semibold" id="advisorModalTitle">Title</span>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row g-4">
+            <div class="col-md-6 border-end">
+              <h6 class="text-muted small text-uppercase mb-2">Designation & Standards</h6>
+              <p class="fw-semibold text-heading mb-3" id="advisorModalDesignation"></p>
+
+              <h6 class="text-muted small text-uppercase mb-2">Academic Credentials</h6>
+              <p class="text-body mb-3" id="advisorModalEducation"></p>
+
+              <h6 class="text-muted small text-uppercase mb-2">Verified Experience</h6>
+              <p class="text-body mb-0" id="advisorModalExperience"></p>
+            </div>
+            <div class="col-md-6">
+              <h6 class="text-muted small text-uppercase mb-2">Core Practice Focus</h6>
+              <p class="text-body mb-3" id="advisorModalFocus"></p>
+
+              <h6 class="text-muted small text-uppercase mb-2">Professional Biography</h6>
+              <p class="small text-body mb-0" id="advisorModalBio"></p>
+            </div>
+          </div>
+          <div class="mt-4 p-3 rounded bg-gold-subtle border border-gold">
+            <div class="d-flex align-items-center gap-2">
+              <i class="bi bi-shield-check text-gold fs-5"></i>
+              <div class="small text-body">
+                <strong>Fiduciary Pledge:</strong> This advisor operates under a legal fiduciary standard, bound to act in the best interests of advisory clients at all times.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-gold" data-bs-dismiss="modal">Close</button>
+          <a href="contact.html" class="btn btn-gold">Request Consultation With This Advisor</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5 JS Bundle CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Main Script -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
