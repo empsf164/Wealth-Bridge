@@ -39,21 +39,11 @@
 
         <div class="d-flex align-items-center gap-2 gap-md-3">
           
-          <div class="d-none d-lg-flex align-items-center gap-1 border-end pe-2 me-1 border-secondary-subtle">
-            <a href="login.html" class="nav-auth-link">Login</a>
-            <span class="text-muted" style="font-size: 0.8rem;">|</span>
-            <a href="signup.html" class="nav-auth-link">Sign Up</a>
-          </div>
-
-          <button type="button" class="theme-toggle-btn" aria-label="Toggle theme mode" title="Toggle theme">
-            <i class="bi bi-moon-stars-fill"></i>
-          </button>
-
-          <a href="contact.html" class="btn btn-gold d-none d-sm-inline-flex">
-            <span>Schedule a Consultation</span>
-            <i class="bi bi-arrow-right"></i>
+          <a href="signup.html" class="btn btn-gold d-none d-xl-inline-flex">
+            <span>Sign Up</span>
           </a>
 
+          <!-- Mobile Hamburger Trigger -->
           <button class="navbar-toggler d-xl-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNavOffcanvas" aria-controls="mobileNavOffcanvas" aria-label="Open navigation menu">
             <i class="bi bi-list fs-3"></i>
           </button>
@@ -71,8 +61,16 @@
       </a>
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close menu"></button>
     </div>
-    <div class="offcanvas-body d-flex flex-column justify-content-between p-4">
-      <nav class="nav flex-column mb-4">
+    <div class="offcanvas-body d-flex flex-column p-4">
+      <!-- Sign Up Button at the top: Visible without scroll on all mobile screens -->
+      <div class="mb-3">
+        <a href="signup.html" class="btn btn-gold w-100 text-center py-2 shadow-sm">
+          <span>Sign Up</span>
+          <i class="bi bi-arrow-right ms-2"></i>
+        </a>
+      </div>
+
+      <nav class="nav flex-column mb-auto">
         <a class="nav-link" href="index.html">Home</a>
         <a class="nav-link" href="about.html">About</a>
         <a class="nav-link" href="advisory-services.html">Advisory Services</a>
@@ -82,15 +80,8 @@
         <a class="nav-link active" href="contact.html">Contact</a>
       </nav>
 
-      <div class="pt-3 border-top">
-        <div class="d-flex gap-2 mb-3">
-          <a href="login.html" class="btn btn-outline-gold flex-fill text-center">Login</a>
-          <a href="signup.html" class="btn btn-gold flex-fill text-center">Sign Up</a>
-        </div>
-        <a href="contact.html" class="btn btn-navy w-100 mb-3">
-          <i class="bi bi-calendar-event me-2"></i>Schedule a Consultation
-        </a>
-        <p class="text-muted small text-center mb-0">Build Wealth With Clarity. Invest With Confidence.</p>
+      <div class="pt-3 border-top text-center mt-3">
+        <p class="text-muted small mb-0">Build Wealth With Clarity. Invest With Confidence.</p>
       </div>
     </div>
   </div>
@@ -103,16 +94,10 @@
     <!-- PAGE HERO -->
     <section class="page-hero">
       <div class="container">
-        <div class="page-hero-inner">
-          <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Contact & Consultation</li>
-            </ol>
-          </nav>
-          <span class="eyebrow">CONFIDENTIAL INQUIRY</span>
+        <div class="page-hero-inner text-center mx-auto">
+          <span class="eyebrow eyebrow-center justify-content-center">CONFIDENTIAL INQUIRY</span>
           <h1>Initiate a Thoughtful Dialogue Regarding Your Wealth.</h1>
-          <p class="lead">
+          <p class="lead mx-auto">
             Every successful advisory relationship begins with an exploratory discovery conversation. We listen carefully, assess fiduciary suitability, and outline structured pathways forward.
           </p>
         </div>
@@ -267,6 +252,21 @@
               </p>
             </div>
 
+            <!-- Social Channels Sidebar Card -->
+            <div class="contact-info-card">
+              <h4><i class="bi bi-share text-gold me-2"></i>Institutional Channels</h4>
+              <p class="small text-muted mb-3">
+                Follow Wealth Bridge research insights, market perspectives, and executive announcements across official channels.
+              </p>
+              <div class="d-flex align-items-center gap-2">
+                <a href="#" class="social-icon-btn" aria-label="LinkedIn" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                <a href="#" class="social-icon-btn" aria-label="X (formerly Twitter)" title="X (Twitter)"><i class="bi bi-twitter-x"></i></a>
+                <a href="#" class="social-icon-btn" aria-label="Facebook" title="Facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="social-icon-btn" aria-label="Instagram" title="Instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="social-icon-btn" aria-label="YouTube" title="YouTube"><i class="bi bi-youtube"></i></a>
+              </div>
+            </div>
+
             <!-- Frequently Asked Consultation Questions -->
             <div class="contact-info-card">
               <h4><i class="bi bi-question-circle"></i>Consultation Expectations</h4>
@@ -296,6 +296,64 @@
 
           </div>
 
+        </div>
+      </div>
+    </section>
+
+    <!-- EXECUTIVE OFFICE & INTERACTIVE MAP SECTION -->
+    <section class="section-padding bg-alt border-top border-bottom" id="office-location">
+      <div class="container">
+        <div class="text-center mx-auto mb-5" style="max-width: 680px;">
+          <span class="eyebrow eyebrow-center justify-content-center">OUR LOCATION</span>
+          <h2 class="h3 mb-2">Visit Our Executive Advisory Headquarters</h2>
+          <div class="gold-divider mx-auto"></div>
+          <p class="text-muted">
+            Located in Manhattan’s Financial District. In-person consultations are hosted in our private boardroom suites by confirmed appointment.
+          </p>
+        </div>
+
+        <div class="row g-4 align-items-stretch">
+          <div class="col-lg-4">
+            <div class="card h-100 p-4 border-0 shadow-sm bg-surface">
+              <h4 class="h5 text-heading mb-3"><i class="bi bi-geo-alt text-gold me-2"></i>Executive Address</h4>
+              <p class="text-body mb-3">
+                <strong>Wealth Bridge Advisory Group</strong><br>
+                500 Park Avenue, 28th Floor<br>
+                Financial District<br>
+                New York, NY 10022
+              </p>
+              
+              <h4 class="h6 text-heading mb-2"><i class="bi bi-clock text-gold me-2"></i>Office Hours</h4>
+              <p class="small text-muted mb-3">
+                Monday – Friday: 8:30 AM – 6:00 PM EST<br>
+                Saturday & Sunday: Closed for Advisory Review
+              </p>
+
+              <h4 class="h6 text-heading mb-2"><i class="bi bi-car-front text-gold me-2"></i>Arrival & Valet</h4>
+              <p class="small text-muted mb-4">
+                Private concierge check-in at Tower lobby. Dedicated parking and building security escort available upon arrival.
+              </p>
+
+              <div class="mt-auto pt-3 border-top">
+                <a href="https://maps.google.com/?q=500+Park+Avenue+New+York+NY" target="_blank" rel="noopener noreferrer" class="btn btn-outline-gold w-100">
+                  <i class="bi bi-box-arrow-up-right me-2"></i>Get Directions
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-8">
+            <div class="ratio ratio-16x9 rounded overflow-hidden shadow-sm border border-gold h-100" style="min-height: 380px;">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.0970343360673!2d-73.97235282346747!3d40.76318517138541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258fa727c9d9d%3A0x6b4c19dd40e29202!2s500%20Park%20Ave%2C%20New%20York%2C%20NY%2010022!5e0!3m2!1sen!2sus!4v1710000000000!5m2!1sen!2sus" 
+                style="border:0; width:100%; height:100%;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Wealth Bridge Headquarters Map">
+              </iframe>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -359,13 +417,20 @@
         
         <div class="col-lg-4">
           <a href="index.html" class="d-inline-block mb-3">
-            <img src="assets/images/logo-dark.svg" alt="Wealth Bridge Logo" class="brand-logo-img" style="height: 38px;">
+            <img src="assets/images/logo.svg" alt="Wealth Bridge Logo" class="brand-logo-img" style="height: 38px;">
           </a>
-          <p class="small text-secondary mb-3">
+          <p class="small text-muted mb-3">
             Wealth Bridge is a professional investment advisory brand dedicated to helping discerning individuals, families, and institutions make informed financial decisions through structured guidance and risk-disciplined portfolio strategies.
           </p>
-          <div class="text-gold small fw-semibold">
+          <div class="text-gold small fw-semibold mb-3">
             <i class="bi bi-quote"></i> Build Wealth With Clarity. Invest With Confidence.
+          </div>
+          <div class="footer-social-links d-flex align-items-center gap-2">
+            <a href="#" class="social-icon-btn" aria-label="LinkedIn" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="X (formerly Twitter)" title="X (Twitter)"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Facebook" title="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Instagram" title="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="YouTube" title="YouTube"><i class="bi bi-youtube"></i></a>
           </div>
         </div>
 

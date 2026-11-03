@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Firm | Wealth Bridge — Fiduciary Stewardship & Advisory Governance</title>
-  <meta name="description" content="Discover Wealth Bridge's founding mission, fiduciary governance, investment philosophy, and the seasoned credentials of our senior advisory committee.">
+  <meta name="description"
+    content="Discover Wealth Bridge's founding mission, fiduciary governance, investment philosophy, and the seasoned credentials of our senior advisory committee.">
   <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
 
   <!-- Bootstrap 5 CSS & Bootstrap Icons CDN -->
@@ -14,6 +16,7 @@
   <!-- Custom Design System -->
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
 
   <!-- =========================================================================
@@ -22,7 +25,7 @@
   <header class="wb-navbar">
     <div class="container-fluid px-lg-5">
       <div class="d-flex align-items-center justify-content-between">
-        
+
         <!-- Brand Logo -->
         <a class="navbar-brand" href="index.html" aria-label="Wealth Bridge Home">
           <img src="assets/images/logo.svg" alt="Wealth Bridge Logo" class="brand-logo-img" width="220" height="44">
@@ -39,25 +42,16 @@
           <a class="nav-link" href="contact.html">Contact</a>
         </nav>
 
-        <!-- Navbar Actions (Auth, Theme Toggle, CTA) -->
+        <!-- Navbar Actions (Sign Up CTA) -->
         <div class="d-flex align-items-center gap-2 gap-md-3">
-          
-          <div class="d-none d-lg-flex align-items-center gap-1 border-end pe-2 me-1 border-secondary-subtle">
-            <a href="login.html" class="nav-auth-link">Login</a>
-            <span class="text-muted" style="font-size: 0.8rem;">|</span>
-            <a href="signup.html" class="nav-auth-link">Sign Up</a>
-          </div>
 
-          <button type="button" class="theme-toggle-btn" aria-label="Toggle theme mode" title="Toggle theme">
-            <i class="bi bi-moon-stars-fill"></i>
-          </button>
-
-          <a href="contact.html" class="btn btn-gold d-none d-sm-inline-flex">
-            <span>Schedule a Consultation</span>
-            <i class="bi bi-arrow-right"></i>
+          <a href="signup.html" class="btn btn-gold d-none d-xl-inline-flex">
+            <span>Sign Up</span>
           </a>
 
-          <button class="navbar-toggler d-xl-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNavOffcanvas" aria-controls="mobileNavOffcanvas" aria-label="Open navigation menu">
+          <!-- Mobile Hamburger Trigger -->
+          <button class="navbar-toggler d-xl-none" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#mobileNavOffcanvas" aria-controls="mobileNavOffcanvas" aria-label="Open navigation menu">
             <i class="bi bi-list fs-3"></i>
           </button>
 
@@ -67,15 +61,24 @@
   </header>
 
   <!-- Mobile Offcanvas Drawer -->
-  <div class="offcanvas offcanvas-end wb-offcanvas" tabindex="-1" id="mobileNavOffcanvas" aria-labelledby="mobileNavLabel">
+  <div class="offcanvas offcanvas-end wb-offcanvas" tabindex="-1" id="mobileNavOffcanvas"
+    aria-labelledby="mobileNavLabel">
     <div class="offcanvas-header">
       <a href="index.html" class="d-flex align-items-center">
         <img src="assets/images/logo.svg" alt="Wealth Bridge Logo" class="brand-logo-img" style="height: 34px;">
       </a>
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close menu"></button>
     </div>
-    <div class="offcanvas-body d-flex flex-column justify-content-between p-4">
-      <nav class="nav flex-column mb-4">
+    <div class="offcanvas-body d-flex flex-column p-4">
+      <!-- Sign Up Button at the top: Visible without scroll on all mobile screens -->
+      <div class="mb-3">
+        <a href="signup.html" class="btn btn-gold w-100 text-center py-2 shadow-sm">
+          <span>Sign Up</span>
+          <i class="bi bi-arrow-right ms-2"></i>
+        </a>
+      </div>
+
+      <nav class="nav flex-column mb-auto">
         <a class="nav-link" href="index.html">Home</a>
         <a class="nav-link active" href="about.html">About</a>
         <a class="nav-link" href="advisory-services.html">Advisory Services</a>
@@ -85,15 +88,8 @@
         <a class="nav-link" href="contact.html">Contact</a>
       </nav>
 
-      <div class="pt-3 border-top">
-        <div class="d-flex gap-2 mb-3">
-          <a href="login.html" class="btn btn-outline-gold flex-fill text-center">Login</a>
-          <a href="signup.html" class="btn btn-gold flex-fill text-center">Sign Up</a>
-        </div>
-        <a href="contact.html" class="btn btn-navy w-100 mb-3">
-          <i class="bi bi-calendar-event me-2"></i>Schedule a Consultation
-        </a>
-        <p class="text-muted small text-center mb-0">Build Wealth With Clarity. Invest With Confidence.</p>
+      <div class="pt-3 border-top text-center mt-3">
+        <p class="text-muted small mb-0">Build Wealth With Clarity. Invest With Confidence.</p>
       </div>
     </div>
   </div>
@@ -106,17 +102,12 @@
     <!-- PAGE HERO -->
     <section class="page-hero">
       <div class="container">
-        <div class="page-hero-inner">
-          <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-              <li class="breadcrumb-item active" aria-current="page">About Firm</li>
-            </ol>
-          </nav>
-          <span class="eyebrow">ABOUT WEALTH BRIDGE</span>
+        <div class="page-hero-inner text-center mx-auto">
+          <span class="eyebrow eyebrow-center justify-content-center">ABOUT WEALTH BRIDGE</span>
           <h1>A Fiduciary Commitment to Long-Term Wealth Stewardship.</h1>
-          <p class="lead">
-            Founded on the conviction that investors deserve transparent counsel, disciplined risk management, and rigorous empirical methodology free from proprietary commercial bias.
+          <p class="lead mx-auto">
+            Founded on the conviction that investors deserve transparent counsel, disciplined risk management, and
+            rigorous empirical methodology free from proprietary commercial bias.
           </p>
         </div>
       </div>
@@ -128,10 +119,12 @@
         <div class="row align-items-center g-5">
           <div class="col-lg-6 order-lg-2">
             <div class="ratio ratio-16x9 rounded overflow-hidden shadow-lg border border-gold">
-              <img src="assets/images/architecture_firm.jpg" alt="Wealth Bridge Institutional Advisory Headquarters" class="w-100 h-100 object-fit-cover">
+              <img src="assets/images/architecture_firm.jpg" alt="Wealth Bridge Institutional Advisory Headquarters"
+                class="w-100 h-100 object-fit-cover">
             </div>
             <div class="mt-3 text-muted small text-center fst-italic">
-              Wealth Bridge Advisory Headquarters — Dedicated to fiduciary client consultations and independent research.
+              Wealth Bridge Advisory Headquarters — Dedicated to fiduciary client consultations and independent
+              research.
             </div>
           </div>
           <div class="col-lg-6 order-lg-1">
@@ -139,13 +132,19 @@
             <h2>Bridging Complexity With Principled Clarity.</h2>
             <div class="gold-divider"></div>
             <p>
-              Wealth Bridge was conceived to address an enduring challenge in the financial services sector: the pervasive conflict of interest between product-driven institutions and the true long-term prosperity of clients.
+              Wealth Bridge was conceived to address an enduring challenge in the financial services sector: the
+              pervasive conflict of interest between product-driven institutions and the true long-term prosperity of
+              clients.
             </p>
             <p>
-              Traditional brokerage operations frequently prioritize transaction velocity, speculative trends, and high-margin proprietary funds. In contrast, Wealth Bridge operates as an independent advisory practice. Our mandate is straightforward: act as an uncompromised fiduciary guide, structuring customized wealth portfolios that withstand cyclical market dislocations.
+              Traditional brokerage operations frequently prioritize transaction velocity, speculative trends, and
+              high-margin proprietary funds. In contrast, Wealth Bridge operates as an independent advisory practice.
+              Our mandate is straightforward: act as an uncompromised fiduciary guide, structuring customized wealth
+              portfolios that withstand cyclical market dislocations.
             </p>
             <p>
-              We serve private individuals, multi-generational family trusts, entrepreneurs navigating liquidity events, and corporate endowments seeking institutional-grade governance.
+              We serve private individuals, multi-generational family trusts, entrepreneurs navigating liquidity events,
+              and corporate endowments seeking institutional-grade governance.
             </p>
           </div>
         </div>
@@ -163,10 +162,12 @@
               </div>
               <h3 class="mb-3">Our Mission</h3>
               <p class="lead text-muted">
-                To empower investors with objective, research-grounded financial guidance that preserves purchasing power, mitigates systemic downside risk, and purposefully builds generational wealth.
+                To empower investors with objective, research-grounded financial guidance that preserves purchasing
+                power, mitigates systemic downside risk, and builds wealth.
               </p>
               <p>
-                We achieve this by aligning our incentives entirely with our clients, eliminating hidden intermediaries, and adhering strictly to a repeatable, evidence-based investment methodology.
+                We achieve this by aligning our incentives entirely with our clients, eliminating hidden intermediaries,
+                and adhering strictly to a repeatable, evidence-based investment methodology.
               </p>
             </div>
           </div>
@@ -177,10 +178,12 @@
               </div>
               <h3 class="mb-3">Our Vision</h3>
               <p class="lead text-muted">
-                To set the benchmark for institutional integrity and intellectual clarity in private wealth advisory, recognized for unwavering fiduciary discipline and client trust.
+                To set the benchmark for institutional integrity and intellectual clarity in private wealth advisory,
+                recognized for unwavering fiduciary discipline and client trust.
               </p>
               <p>
-                We envision a financial advisory ecosystem where every client understands precisely why their portfolio is structured, how risks are managed, and how each decision supports their overarching life milestones.
+                We envision a financial advisory ecosystem where every client understands precisely why their portfolio
+                is structured, how risks are managed, and how each decision supports their overarching life milestones.
               </p>
             </div>
           </div>
@@ -196,17 +199,19 @@
           <h2>The Four Pillars of Wealth Bridge Governance</h2>
           <div class="gold-divider center"></div>
           <p class="text-muted">
-            Every investment recommendation, client communication, and strategic allocation is guided by four immutable core values.
+            Every investment recommendation, client communication, and strategic allocation is guided by four immutable
+            core values.
           </p>
         </div>
 
-        <div class="row g-4">
+        <div class="row g-4 justify-content-center">
           <div class="col-md-6 col-lg-3">
             <div class="service-card">
               <div class="service-icon-wrap"><i class="bi bi-shield-check"></i></div>
               <h3>Fiduciary Duty</h3>
               <p>
-                We are legally and morally bound to place client interests ahead of our own at all times. We do not distribute proprietary funds or receive soft-dollar commissions.
+                We are legally and morally bound to place client interests ahead of our own at all times. We do not
+                distribute proprietary funds or receive soft-dollar commissions.
               </p>
             </div>
           </div>
@@ -215,7 +220,8 @@
               <div class="service-icon-wrap"><i class="bi bi-mortarboard"></i></div>
               <h3>Intellectual Rigor</h3>
               <p>
-                We dismiss market forecasting and emotional fads. Every strategy is tested against empirical financial economics, macroeconomic cycles, and statistical probabilities.
+                We dismiss market forecasting and emotional fads. Every strategy is tested against empirical financial
+                economics, macroeconomic cycles, and statistical probabilities.
               </p>
             </div>
           </div>
@@ -224,7 +230,8 @@
               <div class="service-icon-wrap"><i class="bi bi-eyeglasses"></i></div>
               <h3>Radical Transparency</h3>
               <p>
-                We believe in total clarity regarding fees, risk exposures, drawdown possibilities, and asset custody. You will never encounter hidden friction or opaque reporting.
+                We believe in total clarity regarding fees, risk exposures, drawdown possibilities, and asset custody.
+                You will never encounter hidden friction or opaque reporting.
               </p>
             </div>
           </div>
@@ -233,7 +240,8 @@
               <div class="service-icon-wrap"><i class="bi bi-clock-history"></i></div>
               <h3>Long-Term Alignment</h3>
               <p>
-                Enduring wealth is built over decades, not quarters. We construct portfolios designed to survive acute macroeconomic shocks while compounding sustainably over lifetimes.
+                Enduring wealth is built over decades, not quarters. We construct portfolios designed to survive acute
+                macroeconomic shocks while compounding sustainably over lifetimes.
               </p>
             </div>
           </div>
@@ -250,10 +258,12 @@
             <h2 class="text-white mb-3">Disciplined Philosophy, Not Market Prediction.</h2>
             <div class="gold-divider"></div>
             <p class="lead" style="color: #CAD5E2;">
-              The financial markets are complex adaptive systems. Consistent long-term outperformance is not achieved through speculative market timing, but through disciplined structure.
+              The financial markets are complex adaptive systems. Consistent long-term outperformance is not achieved
+              through speculative market timing, but through disciplined structure.
             </p>
             <p style="color: #9BB0C7;">
-              Our investment committee adheres to time-tested principles that separate noise from substance, enabling our clients to navigate volatility with measured poise.
+              Our investment committee adheres to time-tested principles that separate noise from substance, enabling
+              our clients to navigate volatility with measured poise.
             </p>
             <div class="mt-4">
               <a href="investment-approach.html" class="btn btn-gold">
@@ -265,34 +275,44 @@
           <div class="col-lg-7">
             <div class="row g-4">
               <div class="col-sm-6">
-                <div class="p-4 rounded border border-secondary-subtle h-100" style="background-color: rgba(255, 255, 255, 0.04);">
+                <div class="p-4 rounded border border-secondary-subtle h-100"
+                  style="background-color: rgba(255, 255, 255, 0.04);">
                   <h4 class="text-white h5 mb-2"><i class="bi bi-layers text-gold me-2"></i>Global Diversification</h4>
                   <p class="small mb-0" style="color: #9BB0C7;">
-                    Spreading risk across asset classes, geographies, sectors, and factors to minimize idiosyncratic loss while capturing broad capital productivity.
+                    Spreading risk across asset classes, geographies, sectors, and factors to minimize idiosyncratic
+                    loss while capturing broad capital productivity.
                   </p>
                 </div>
               </div>
               <div class="col-sm-6">
-                <div class="p-4 rounded border border-secondary-subtle h-100" style="background-color: rgba(255, 255, 255, 0.04);">
+                <div class="p-4 rounded border border-secondary-subtle h-100"
+                  style="background-color: rgba(255, 255, 255, 0.04);">
                   <h4 class="text-white h5 mb-2"><i class="bi bi-percent text-gold me-2"></i>Cost & Tax Efficiency</h4>
                   <p class="small mb-0" style="color: #9BB0C7;">
-                    Unnecessary transaction costs and taxes directly erode compound returns. We implement rigorous asset location and disciplined turnover controls.
+                    Unnecessary transaction costs and taxes directly erode compound returns. We implement rigorous asset
+                    location and disciplined turnover controls.
                   </p>
                 </div>
               </div>
               <div class="col-sm-6">
-                <div class="p-4 rounded border border-secondary-subtle h-100" style="background-color: rgba(255, 255, 255, 0.04);">
-                  <h4 class="text-white h5 mb-2"><i class="bi bi-shield-slash text-gold me-2"></i>Downside Capital Defense</h4>
+                <div class="p-4 rounded border border-secondary-subtle h-100"
+                  style="background-color: rgba(255, 255, 255, 0.04);">
+                  <h4 class="text-white h5 mb-2"><i class="bi bi-shield-slash text-gold me-2"></i>Downside Capital
+                    Defense</h4>
                   <p class="small mb-0" style="color: #9BB0C7;">
-                    Recovering from severe drawdowns requires disproportionate gains. We design defensive liquidity reserves and asset buffers to absorb severe contractions.
+                    Recovering from severe drawdowns requires disproportionate gains. We design defensive liquidity
+                    reserves and asset buffers to absorb severe contractions.
                   </p>
                 </div>
               </div>
               <div class="col-sm-6">
-                <div class="p-4 rounded border border-secondary-subtle h-100" style="background-color: rgba(255, 255, 255, 0.04);">
-                  <h4 class="text-white h5 mb-2"><i class="bi bi-heart-pulse text-gold me-2"></i>Behavioral Fortitude</h4>
+                <div class="p-4 rounded border border-secondary-subtle h-100"
+                  style="background-color: rgba(255, 255, 255, 0.04);">
+                  <h4 class="text-white h5 mb-2"><i class="bi bi-heart-pulse text-gold me-2"></i>Behavioral Fortitude
+                  </h4>
                   <p class="small mb-0" style="color: #9BB0C7;">
-                    The greatest risk to capital is often investor emotion during panics or euphoria. We provide an objective anchor to ensure unwavering discipline.
+                    The greatest risk to capital is often investor emotion during panics or euphoria. We provide an
+                    objective anchor to ensure unwavering discipline.
                   </p>
                 </div>
               </div>
@@ -310,11 +330,12 @@
           <h2>Advisory Committee & Senior Credentials</h2>
           <div class="gold-divider center"></div>
           <p class="text-muted">
-            Our advisors possess comprehensive professional designations, extensive institutional track records, and advanced academic foundations in finance and economics.
+            Our advisors possess comprehensive professional designations, extensive institutional track records, and
+            advanced academic foundations in finance and economics.
           </p>
         </div>
 
-        <div class="row g-4">
+        <div class="row g-4 justify-content-center">
           <!-- Advisor 1: Jonathan Vance -->
           <div class="col-md-6 col-lg-3">
             <div class="advisor-card">
@@ -328,13 +349,15 @@
                 <h3>Jonathan Vance</h3>
                 <div class="advisor-title">Managing Partner & Chief Strategist</div>
                 <p class="advisor-bio">
-                  Leads the firm's strategic asset allocation committee with 24+ years of institutional fiduciary experience.
+                  Leads the firm's strategic asset allocation committee with 24+ years of institutional fiduciary
+                  experience.
                 </p>
                 <div class="advisor-meta">
                   <div class="advisor-meta-item"><strong>Focus:</strong> Macro Allocation & Preservation</div>
-                  <div class="advisor-meta-item"><strong>Education:</strong> Harvard Business School (MBA)</div>
+                  <div class="advisor-meta-item"><strong>Education:</strong> Harvard Business School</div>
                 </div>
-                <button type="button" class="btn btn-outline-gold btn-sm w-100 mt-3 view-credentials-btn" data-advisor="vance">
+                <button type="button" class="btn btn-outline-gold btn-sm w-100 mt-3 view-credentials-btn"
+                  data-advisor="vance">
                   <i class="bi bi-file-earmark-person me-1"></i>View Credentials
                 </button>
               </div>
@@ -354,13 +377,15 @@
                 <h3>Eleanor Chen</h3>
                 <div class="advisor-title">Principal, Private Wealth Advisory</div>
                 <p class="advisor-bio">
-                  Specializes in inter-generational wealth architecture, family estate governance, and tax-efficient structures.
+                  Specializes in inter-generational wealth architecture, family estate governance, and tax-efficient
+                  structures.
                 </p>
                 <div class="advisor-meta">
                   <div class="advisor-meta-item"><strong>Focus:</strong> Family Wealth & Succession</div>
                   <div class="advisor-meta-item"><strong>Education:</strong> Columbia University (M.S.)</div>
                 </div>
-                <button type="button" class="btn btn-outline-gold btn-sm w-100 mt-3 view-credentials-btn" data-advisor="chen">
+                <button type="button" class="btn btn-outline-gold btn-sm w-100 mt-3 view-credentials-btn"
+                  data-advisor="chen">
                   <i class="bi bi-file-earmark-person me-1"></i>View Credentials
                 </button>
               </div>
@@ -380,13 +405,15 @@
                 <h3>Marcus Holloway</h3>
                 <div class="advisor-title">Director of Portfolio Strategy</div>
                 <p class="advisor-bio">
-                  Directs quantitative stress-testing, risk factor decomposition, and disciplined portfolio rebalancing frameworks.
+                  Directs quantitative stress-testing, risk factor decomposition, and disciplined portfolio rebalancing
+                  frameworks.
                 </p>
                 <div class="advisor-meta">
                   <div class="advisor-meta-item"><strong>Focus:</strong> Quantitative Risk & Liquidity</div>
                   <div class="advisor-meta-item"><strong>Education:</strong> Univ. of Chicago (M.S.)</div>
                 </div>
-                <button type="button" class="btn btn-outline-gold btn-sm w-100 mt-3 view-credentials-btn" data-advisor="holloway">
+                <button type="button" class="btn btn-outline-gold btn-sm w-100 mt-3 view-credentials-btn"
+                  data-advisor="holloway">
                   <i class="bi bi-file-earmark-person me-1"></i>View Credentials
                 </button>
               </div>
@@ -397,7 +424,8 @@
           <div class="col-md-6 col-lg-3">
             <div class="advisor-card">
               <div class="advisor-img-wrap">
-                <img src="assets/images/advisor_mansoor.jpg" alt="Dr. Sophia Al-Mansoor, Ph.D. - Research Head" loading="lazy">
+                <img src="assets/images/advisor_mansoor.jpg" alt="Dr. Sophia Al-Mansoor, Ph.D. - Research Head"
+                  loading="lazy">
                 <div class="advisor-badge-strip">
                   <span class="credential-pill">Ph.D. Economics</span>
                 </div>
@@ -412,7 +440,8 @@
                   <div class="advisor-meta-item"><strong>Focus:</strong> Macro Regimes & Policy</div>
                   <div class="advisor-meta-item"><strong>Education:</strong> London School of Economics</div>
                 </div>
-                <button type="button" class="btn btn-outline-gold btn-sm w-100 mt-3 view-credentials-btn" data-advisor="mansoor">
+                <button type="button" class="btn btn-outline-gold btn-sm w-100 mt-3 view-credentials-btn"
+                  data-advisor="mansoor">
                   <i class="bi bi-file-earmark-person me-1"></i>View Credentials
                 </button>
               </div>
@@ -424,7 +453,8 @@
           <div class="row align-items-center justify-content-center">
             <div class="col-lg-8">
               <h4 class="mb-1">Meet With An Advisor Directly</h4>
-              <p class="text-muted mb-0 small">Schedule a confidential discovery meeting to discuss your portfolio strategy and wealth roadmap.</p>
+              <p class="text-muted mb-0 small">Schedule a confidential discovery meeting to discuss your portfolio
+                strategy and wealth roadmap.</p>
             </div>
             <div class="col-lg-3 text-lg-end mt-3 mt-lg-0">
               <a href="contact.html" class="btn btn-gold">Schedule Discovery Call</a>
@@ -443,16 +473,30 @@
   <footer class="wb-footer">
     <div class="container">
       <div class="row g-5">
-        
+
         <div class="col-lg-4">
           <a href="index.html" class="d-inline-block mb-3">
-            <img src="assets/images/logo-dark.svg" alt="Wealth Bridge Logo" class="brand-logo-img" style="height: 38px;">
+            <img src="assets/images/logo.svg" alt="Wealth Bridge Logo" class="brand-logo-img" style="height: 38px;">
           </a>
-          <p class="small text-secondary mb-3">
-            Wealth Bridge is a professional investment advisory brand dedicated to helping discerning individuals, families, and institutions make informed financial decisions through structured guidance and risk-disciplined portfolio strategies.
+          <p class="small text-muted mb-3">
+            Wealth Bridge is a professional investment advisory brand dedicated to helping discerning individuals,
+            families, and institutions make informed financial decisions through structured guidance and
+            risk-disciplined portfolio strategies.
           </p>
-          <div class="text-gold small fw-semibold">
+          <div class="text-gold small fw-semibold mb-3">
             <i class="bi bi-quote"></i> Build Wealth With Clarity. Invest With Confidence.
+          </div>
+          <!-- Social Icons in Footer with Hover -->
+          <div class="footer-social-links d-flex align-items-center gap-2">
+            <a href="#" class="social-icon-btn" aria-label="LinkedIn" title="LinkedIn"><i
+                class="bi bi-linkedin"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="X (formerly Twitter)" title="X (Twitter)"><i
+                class="bi bi-twitter-x"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Facebook" title="Facebook"><i
+                class="bi bi-facebook"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Instagram" title="Instagram"><i
+                class="bi bi-instagram"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="YouTube" title="YouTube"><i class="bi bi-youtube"></i></a>
           </div>
         </div>
 
@@ -500,7 +544,13 @@
       </div>
 
       <div class="footer-disclaimer-box">
-        <strong>REGULATORY AND FIDUCIARY DISCLOSURE:</strong> Wealth Bridge is an independent investment advisory firm. All materials, articles, and commentary provided on this website are for educational and informational purposes only and do not constitute personalized investment advice, a legal guarantee of performance, or a solicitation to purchase or sell any specific securities. Investment strategies involve the risk of loss of principal. Advisory engagements commence solely upon formal execution of a client advisory agreement and thorough assessment of investor suitability. Please read our <a href="risk-disclosures.html" class="text-gold text-decoration-underline">complete Risk Disclosures</a>.
+        <strong>REGULATORY AND FIDUCIARY DISCLOSURE:</strong> Wealth Bridge is an independent investment advisory firm.
+        All materials, articles, and commentary provided on this website are for educational and informational purposes
+        only and do not constitute personalized investment advice, a legal guarantee of performance, or a solicitation
+        to purchase or sell any specific securities. Investment strategies involve the risk of loss of principal.
+        Advisory engagements commence solely upon formal execution of a client advisory agreement and thorough
+        assessment of investor suitability. Please read our <a href="risk-disclosures.html"
+          class="text-gold text-decoration-underline">complete Risk Disclosures</a>.
       </div>
 
       <div class="footer-bottom">
@@ -523,7 +573,8 @@
   <!-- =========================================================================
        ADVISOR CREDENTIALS MODAL
        ========================================================================= -->
-  <div class="modal fade" id="advisorCredentialsModal" tabindex="-1" aria-labelledby="advisorModalName" aria-hidden="true">
+  <div class="modal fade" id="advisorCredentialsModal" tabindex="-1" aria-labelledby="advisorModalName"
+    aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content">
         <div class="modal-header">
@@ -557,7 +608,8 @@
             <div class="d-flex align-items-center gap-2">
               <i class="bi bi-shield-check text-gold fs-5"></i>
               <div class="small text-body">
-                <strong>Fiduciary Pledge:</strong> This advisor operates under a legal fiduciary standard, bound to act in the best interests of advisory clients at all times.
+                <strong>Fiduciary Pledge:</strong> This advisor operates under a legal fiduciary standard, bound to act
+                in the best interests of advisory clients at all times.
               </div>
             </div>
           </div>
@@ -575,4 +627,5 @@
   <!-- Main Script -->
   <script src="assets/js/main.js"></script>
 </body>
+
 </html>

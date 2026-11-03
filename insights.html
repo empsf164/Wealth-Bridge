@@ -37,23 +37,14 @@
           <a class="nav-link" href="contact.html">Contact</a>
         </nav>
 
+        <!-- Navbar Actions (Sign Up CTA) -->
         <div class="d-flex align-items-center gap-2 gap-md-3">
           
-          <div class="d-none d-lg-flex align-items-center gap-1 border-end pe-2 me-1 border-secondary-subtle">
-            <a href="login.html" class="nav-auth-link">Login</a>
-            <span class="text-muted" style="font-size: 0.8rem;">|</span>
-            <a href="signup.html" class="nav-auth-link">Sign Up</a>
-          </div>
-
-          <button type="button" class="theme-toggle-btn" aria-label="Toggle theme mode" title="Toggle theme">
-            <i class="bi bi-moon-stars-fill"></i>
-          </button>
-
-          <a href="contact.html" class="btn btn-gold d-none d-sm-inline-flex">
-            <span>Schedule a Consultation</span>
-            <i class="bi bi-arrow-right"></i>
+          <a href="signup.html" class="btn btn-gold d-none d-xl-inline-flex">
+            <span>Sign Up</span>
           </a>
 
+          <!-- Mobile Hamburger Trigger -->
           <button class="navbar-toggler d-xl-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNavOffcanvas" aria-controls="mobileNavOffcanvas" aria-label="Open navigation menu">
             <i class="bi bi-list fs-3"></i>
           </button>
@@ -71,8 +62,16 @@
       </a>
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close menu"></button>
     </div>
-    <div class="offcanvas-body d-flex flex-column justify-content-between p-4">
-      <nav class="nav flex-column mb-4">
+    <div class="offcanvas-body d-flex flex-column p-4">
+      <!-- Sign Up Button at the top: Visible without scroll on all mobile screens -->
+      <div class="mb-3">
+        <a href="signup.html" class="btn btn-gold w-100 text-center py-2 shadow-sm">
+          <span>Sign Up</span>
+          <i class="bi bi-arrow-right ms-2"></i>
+        </a>
+      </div>
+
+      <nav class="nav flex-column mb-auto">
         <a class="nav-link" href="index.html">Home</a>
         <a class="nav-link" href="about.html">About</a>
         <a class="nav-link" href="advisory-services.html">Advisory Services</a>
@@ -82,15 +81,8 @@
         <a class="nav-link" href="contact.html">Contact</a>
       </nav>
 
-      <div class="pt-3 border-top">
-        <div class="d-flex gap-2 mb-3">
-          <a href="login.html" class="btn btn-outline-gold flex-fill text-center">Login</a>
-          <a href="signup.html" class="btn btn-gold flex-fill text-center">Sign Up</a>
-        </div>
-        <a href="contact.html" class="btn btn-navy w-100 mb-3">
-          <i class="bi bi-calendar-event me-2"></i>Schedule a Consultation
-        </a>
-        <p class="text-muted small text-center mb-0">Build Wealth With Clarity. Invest With Confidence.</p>
+      <div class="pt-3 border-top text-center mt-3">
+        <p class="text-muted small mb-0">Build Wealth With Clarity. Invest With Confidence.</p>
       </div>
     </div>
   </div>
@@ -103,16 +95,10 @@
     <!-- PAGE HERO -->
     <section class="page-hero">
       <div class="container">
-        <div class="page-hero-inner">
-          <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Insights & Resources</li>
-            </ol>
-          </nav>
-          <span class="eyebrow">RESEARCH & COMMENTARY</span>
+        <div class="page-hero-inner text-center mx-auto">
+          <span class="eyebrow eyebrow-center justify-content-center">RESEARCH & COMMENTARY</span>
           <h1>Empowering Investors Through Empirical Clarity.</h1>
-          <p class="lead">
+          <p class="lead mx-auto">
             Educational perspectives on macroeconomic dynamics, long-horizon wealth architecture, tax-aware compounding, and disciplined risk management.
           </p>
         </div>
@@ -171,7 +157,7 @@
           </button>
         </div>
 
-        <div class="row g-4" id="articlesContainer">
+        <div class="row g-4 justify-content-center" id="articlesContainer">
 
           <!-- Article 1 -->
           <div class="col-md-6 col-lg-4 insight-card-item" data-category="investment-strategy">
@@ -593,13 +579,21 @@
         
         <div class="col-lg-4">
           <a href="index.html" class="d-inline-block mb-3">
-            <img src="assets/images/logo-dark.svg" alt="Wealth Bridge Logo" class="brand-logo-img" style="height: 38px;">
+            <img src="assets/images/logo.svg" alt="Wealth Bridge Logo" class="brand-logo-img" style="height: 38px;">
           </a>
-          <p class="small text-secondary mb-3">
+          <p class="small text-muted mb-3">
             Wealth Bridge is a professional investment advisory brand dedicated to helping discerning individuals, families, and institutions make informed financial decisions through structured guidance and risk-disciplined portfolio strategies.
           </p>
-          <div class="text-gold small fw-semibold">
+          <div class="text-gold small fw-semibold mb-3">
             <i class="bi bi-quote"></i> Build Wealth With Clarity. Invest With Confidence.
+          </div>
+          <!-- Social Icons in Footer with Hover -->
+          <div class="footer-social-links d-flex align-items-center gap-2">
+            <a href="#" class="social-icon-btn" aria-label="LinkedIn" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="X (formerly Twitter)" title="X (Twitter)"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Facebook" title="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Instagram" title="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="YouTube" title="YouTube"><i class="bi bi-youtube"></i></a>
           </div>
         </div>
 

@@ -7,30 +7,11 @@ document.addEventListener('DOMContentLoaded', () => {
   'use strict';
 
   /* ------------------------------------------------------------------------
-     1. THEME SWITCHER (LIGHT / DARK THEME WITH PERSISTENCE)
+     1. THEME INITIALIZATION (DEFAULT LIGHT MODE)
      ------------------------------------------------------------------------ */
-  const themeToggleBtns = document.querySelectorAll('.theme-toggle-btn');
-  const savedTheme = localStorage.getItem('wb_theme') || 'light';
-
   function applyTheme(theme) {
     document.documentElement.setAttribute('data-theme', theme);
     localStorage.setItem('wb_theme', theme);
-
-    // Update icons on toggle buttons
-    themeToggleBtns.forEach(btn => {
-      const icon = btn.querySelector('i');
-      if (icon) {
-        if (theme === 'dark') {
-          icon.className = 'bi bi-sun-fill';
-          btn.setAttribute('aria-label', 'Switch to Light Theme');
-          btn.setAttribute('title', 'Switch to Light Theme');
-        } else {
-          icon.className = 'bi bi-moon-stars-fill';
-          btn.setAttribute('aria-label', 'Switch to Dark Theme');
-          btn.setAttribute('title', 'Switch to Dark Theme');
-        }
-      }
-    });
 
     // Update logos if present
     const brandLogos = document.querySelectorAll('.brand-logo-img');
@@ -43,17 +24,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Initialize Theme
-  applyTheme(savedTheme);
-
-  themeToggleBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
-      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-      applyTheme(newTheme);
-      showToast('Theme Updated', `Switched to ${newTheme === 'dark' ? 'Dark' : 'Ivory Light'} presentation.`);
-    });
-  });
+  // Default to light theme
+  applyTheme('light');
 
   /* ------------------------------------------------------------------------
      2. NAVBAR SCROLL EFFECT
